@@ -1,0 +1,23 @@
+.HomeTopBox-box{
+    background-color: #F7F8FB;
+    border-radius: 10px;
+    width: 227px;
+    height: 130px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.homeTopBox-p{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 18px;
+    Line-height: 20px;
+    Line-height: 81%;
+}
+
+.homeTopBox-h2{
+    Font-family: Nunito Sans;
+    Font-style: ExtraBold;
+    Font-size: 35px;
+    Line-height: 36px;
+}
