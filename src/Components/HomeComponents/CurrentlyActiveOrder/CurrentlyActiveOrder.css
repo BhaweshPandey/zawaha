@@ -3,7 +3,7 @@
     height: 516px;
     border: 1px solid #EAECF3;
     border-radius: 26px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .CurrentlyActiveOrder-heading{
@@ -14,6 +14,7 @@
 .CurrentlyActiveOrder-button{
     display: flex;
     gap: 30px;
+    color: #D8D8D9;
 }
 
 .CurrentlyActiveOrder-button-1{
@@ -21,8 +22,8 @@
     color: white;
     border-radius: 18.5px;
     width: 130px;
-    padding: 10px;
     text-align: center;
+    padding: 5px;
 }
 
 .CurrentlyActiveOrder-box-map{
