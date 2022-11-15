@@ -1,0 +1,44 @@
+.CurrentlyActiveOrder{
+    width: 710px;
+    height: 516px;
+    border: 1px solid #EAECF3;
+    border-radius: 26px;
+    padding: 10px;
+}
+
+.CurrentlyActiveOrder-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CurrentlyActiveOrder-button{
+    display: flex;
+    gap: 30px;
+}
+
+.CurrentlyActiveOrder-button-1{
+    background-color: #304F42;
+    color: white;
+    border-radius: 18.5px;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+}
+
+.CurrentlyActiveOrder-box-map{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.CurrentlyActiveOrder-box{
+    display: flex;
+    justify-content: space-between;
+    width: 664px;
+    height: 83px;
+    border: 1px solid #EAECF3 ;
+    border-radius: 20px;
+    background-color: #F7F8FB;
+}

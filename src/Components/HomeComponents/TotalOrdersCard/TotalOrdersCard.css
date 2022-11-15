@@ -1,0 +1,38 @@
+.TotalOrdersCard{
+    width:335px ;
+    height: 516px;
+    background-color: #13322B;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.TotalOrdersCard-top{
+    display: flex;
+    justify-content: center;
+}
+
+.TotalOrdersCard-circle{
+    border: 16px solid #021b11;
+    border-radius: 100%;
+    color: white;
+    width: 199px;
+    height: 199px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TotalOrdersCard-mid{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+.TotalOrdersCard-bottom{
+    display: flex;
+    justify-content: center;
+    color: white;
+}

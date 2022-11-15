@@ -1,7 +1,9 @@
 import React from 'react'
 import './Home.css'
 import bell from '../../Images/menutop copy.png'
-import HomeTopBox from '../../Components/HomeComponents/HomeTopBox'
+import HomeTopBox from '../../Components/HomeComponents/HomeTopBox/HomeTopBox'
+import CurrentlyActiveOrder from '../../Components/HomeComponents/CurrentlyActiveOrder/CurrentlyActiveOrder'
+import TotalOrdersCard from '../../Components/HomeComponents/TotalOrdersCard/TotalOrdersCard'
 
 const Home = () => {
   return (
@@ -23,6 +25,10 @@ const Home = () => {
                 <HomeTopBox text={"Completed"} number={"127"} styles={"HomeTopBox-box"} />
                 <HomeTopBox text={"Cancelled"} number={"18"} styles={"HomeTopBox-box"} />
             </div>
+        </div>
+        <div className='Home-mid'>
+            <CurrentlyActiveOrder />
+            <TotalOrdersCard />
         </div>
     </div>
   )
