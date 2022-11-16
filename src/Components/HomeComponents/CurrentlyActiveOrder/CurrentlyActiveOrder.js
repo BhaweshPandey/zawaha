@@ -1,12 +1,13 @@
 import React from 'react'
 import './CurrentlyActiveOrder.css'
+import { BsChevronRight } from "react-icons/bs";
 
 const CurrentlyActiveOrder = () => {
   return (
     <div className='CurrentlyActiveOrder'>
         <div className='CurrentlyActiveOrder-heading'>
             <h3>Currently active orders</h3>
-            <h3>See all orders</h3>
+            <h3>See all orders <BsChevronRight /></h3>
         </div>
         <div className='CurrentlyActiveOrder-button'>
             <p className='CurrentlyActiveOrder-button-1'>Order placed</p>

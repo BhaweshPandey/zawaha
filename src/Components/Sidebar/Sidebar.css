@@ -9,8 +9,12 @@
     margin-left: 0px;
 }
 
-
-
-li{
+li {
     list-style: none;
+    text-decoration: none;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 22px;
 }
+
+
