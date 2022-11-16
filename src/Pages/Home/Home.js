@@ -10,7 +10,7 @@ const Home = () => {
     <div className='Home'>
         <div className='Home-heading'>
             <h2>Home</h2>
-            <img src={bell} alt='' />
+            <img height='60px' src={bell} alt='' />
         </div>
         <div className='Home-header'>
             <div className='Home-circle'>

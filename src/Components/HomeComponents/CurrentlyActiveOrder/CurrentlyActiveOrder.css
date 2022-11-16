@@ -1,14 +1,18 @@
 .CurrentlyActiveOrder{
-    width: 710px;
+    width: 680px;
     height: 516px;
     border: 1px solid #EAECF3;
     border-radius: 26px;
     padding: 5px;
+    padding: 0px 25px;
 }
 
 .CurrentlyActiveOrder-heading{
     display: flex;
     justify-content: space-between;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 22px;
 }
 
 .CurrentlyActiveOrder-button{
@@ -20,26 +24,82 @@
 .CurrentlyActiveOrder-button-1{
     background-color: #304F42;
     color: white;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 16px;
     border-radius: 18.5px;
     width: 130px;
     text-align: center;
-    padding: 5px;
+    padding: 5px 0px;
+    cursor: pointer;
 }
+
+.CurrentlyActiveOrder-button-2{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 16px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.CurrentlyActiveOrder-button-3{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 16px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
+.CurrentlyActiveOrder-button-4{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 16px;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+
 
 .CurrentlyActiveOrder-box-map{
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .CurrentlyActiveOrder-box{
     display: flex;
     justify-content: space-between;
+    padding: 0px 7px;
     width: 664px;
     height: 83px;
-    border: 1px solid #EAECF3 ;
     border-radius: 20px;
     background-color: #F7F8FB;
+}
+
+.CurrentlyActiveOrder-box-inear-c1-r1{
+    margin-bottom: 0px;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 18px;
+}
+
+.CurrentlyActiveOrder-box-inear-c1-r2{
+    margin-top: 0px;
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 15px;
+}
+
+.CurrentlyActiveOrder-box-inear-c2-r1{
+    margin-bottom: 0px;
+    Font-family: Nunito Sans;
+    Font-style: Mixed;
+    Font-size: 18px;
+}
+
+.CurrentlyActiveOrder-box-inear-c2-r2{
+    margin-top: 0px;
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 15px;
 }

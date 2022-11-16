@@ -10,21 +10,21 @@ const CurrentlyActiveOrder = () => {
         </div>
         <div className='CurrentlyActiveOrder-button'>
             <p className='CurrentlyActiveOrder-button-1'>Order placed</p>
-            <p>Confirmed</p>
-            <p>On process</p>
-            <p>Completed</p>
+            <p className='CurrentlyActiveOrder-button-2'>Confirmed</p>
+            <p className='CurrentlyActiveOrder-button-3'>On process</p>
+            <p className='CurrentlyActiveOrder-button-4'>Completed</p>
         </div>
 
         <div className='CurrentlyActiveOrder-box-map'>
         {[1 , 2, 3 , 4].map((item,setIetem)=>(
         <div className='CurrentlyActiveOrder-box'>
             <div className='CurrentlyActiveOrder-box-inear'>
-                <h3>Elise Beverley</h3>
-                <p>Wedding & anniversary</p>
+                <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>Elise Beverley</h3>
+                <p className='CurrentlyActiveOrder-box-inear-c1-r2'>Wedding & anniversary</p>
             </div>
             <div className='CurrentlyActiveOrder-box-inear'>
-                <h3>$240.00   4 items</h3>
-                <p>Ordered on Jan 2nd, 2021</p>
+                <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>$240.00   4 items</h3>
+                <p className='CurrentlyActiveOrder-box-inear-c2-r2'>Ordered on Jan 2nd, 2021</p>
             </div>
         </div>
         ))}

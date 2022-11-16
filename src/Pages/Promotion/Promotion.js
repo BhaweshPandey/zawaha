@@ -1,8 +1,9 @@
 import React from 'react'
+import './Promotion.css'
 
 const Promotion = () => {
   return (
-    <div>Promotion</div>
+    <div className='Promotion'>Promotion</div>
   )
 }
 

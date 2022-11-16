@@ -1,0 +1,58 @@
+.MyStore{
+    width: 80%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.Mystore-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.Mystore-location{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Mystore-location-profile{
+    margin-left: 30px;
+}
+
+.Mystore-location-shop{
+ color: black;
+}
+
+.Mystore-location-shop-details{
+    display: flex;
+}
+
+.Mystore-locatin-shop-rating{
+    display: flex;
+}
+
+.Mystore-location-shop-address{
+    display: flex;
+}
+
+.Mystore-location-item-no-box{
+    background-color: grey;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    height: 125px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.Mystore-location-per-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+
+}
+
+.Mystore-location-box-p{
+    margin-top: -20px;
+}

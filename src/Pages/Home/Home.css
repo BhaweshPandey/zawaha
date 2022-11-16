@@ -3,11 +3,15 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    padding: 5px;
 }
 
 .Home-heading{
     display: flex;
     justify-content: space-between;
+    Font-family: Arial;
+    Font-style: Bold;
+    font-size: 25px;
 }
 
 .Home-header{
@@ -17,9 +21,10 @@
 
 .Home-circle{
     border: 18px solid red;
-    width: 232px;
-    height: 232px;
+    width: 220px;
+    height: 220px;
     border-radius: 100%;
+    margin-top: 10px;
 
 }
 
@@ -57,4 +62,5 @@
 .Home-mid{
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
