@@ -17,11 +17,11 @@ function App() {
       <BrowserRouter>
       <Sidebar/>
         <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/MyOrders' element={<MyOrders/>} />
-        <Route path='/Mystore' element={<MyStore />} />
-        <Route path='/Promotion' element={<Promotion />} />
-        <Route path='/Proposal' element={<Proposal />} />
+          <Route path='/' element={<Home/>} />
+          <Route path='/MyOrders' element={<MyOrders/>} />
+          <Route path='/Mystore' element={<MyStore />} />
+          <Route path='/Promotion' element={<Promotion />} />
+          <Route path='/Proposal' element={<Proposal />} />
         </Routes>
       </BrowserRouter>
     </div>
