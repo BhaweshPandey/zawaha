@@ -5,12 +5,15 @@ import HomeTopBox from '../../Components/HomeComponents/HomeTopBox/HomeTopBox'
 import CurrentlyActiveOrder from '../../Components/HomeComponents/CurrentlyActiveOrder/CurrentlyActiveOrder'
 import TotalOrdersCard from '../../Components/HomeComponents/TotalOrdersCard/TotalOrdersCard'
 import { BsFillCaretDownFill } from "react-icons/bs";
+import { BsList } from "react-icons/bs";
 
 const Home = () => {
   return (
     <div className='Home'>
         <div className='Home-heading'>
-            <h2>Home</h2>
+            <h2>Home 
+            <button className='hamburger-menu'><BsList/></button>
+            </h2>
             <img height='60px' src={bell} alt='' />
         </div>
         <div className='Home-header'>

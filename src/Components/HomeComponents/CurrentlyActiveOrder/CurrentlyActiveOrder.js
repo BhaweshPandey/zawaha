@@ -17,7 +17,7 @@ const CurrentlyActiveOrder = () => {
         </div>
 
         <div className='CurrentlyActiveOrder-box-map'>
-        {[1 , 2, 3 , 4].map((item,setIetem)=>(
+        {[1 , 2, 3 ,4].map((item,setIetem)=>(
         <div className='CurrentlyActiveOrder-box'>
             <div className='CurrentlyActiveOrder-box-inear'>
                 <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>Elise Beverley</h3>

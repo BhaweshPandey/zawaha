@@ -1,5 +1,5 @@
 .TotalOrdersCard{
-    width:335px ;
+    width:405px ;
     height: 516px;
     background-color: #13322B;
     border-radius: 26px;
@@ -54,4 +54,21 @@
     font-size: 18px;
     Font-family: Nunito Sans;
     Font-style: SemiBold;
+}
+
+@media (max-width:900px) {
+
+    .TotalOrdersCard{
+        width: 500px;
+    }
+
+    
+}
+
+@media (max-width:600px) {
+
+    .TotalOrdersCard{
+        width: 350px;
+    }
+    
 }
