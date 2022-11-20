@@ -1,0 +1,51 @@
+.FoodCard-map{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.FoodCard{
+    width: 300px;
+    
+}
+
+.food-img{
+    border-radius: 10px;
+}
+
+.FoodCard-rs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.FoodCard-h{
+    Font-family: Nunito Sans;
+    Font-style: ExtraBold;
+    Font-size: 22px;
+    margin-top: 0px;
+}
+
+.FoodCard-p{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 20px;
+}
+
+@media (max-width:900px) {
+    .FoodCard-map{
+        flex-direction: column;
+        
+    }
+
+    .FoodCard{
+        width: 200px;
+        
+    }
+
+    .food-img{
+        width: 200px;
+    }
+    
+}

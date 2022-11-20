@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import './Home.css'
 import bell from '../../Images/menutop copy.png'
 import HomeTopBox from '../../Components/HomeComponents/HomeTopBox/HomeTopBox'
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className='Home'>
         <div className='Home-heading'>
-            <h2>Home 
+            <h2>Home
             <button className='hamburger-menu'><BsList/></button>
             </h2>
             <img height='60px' src={bell} alt='' />

@@ -1,0 +1,26 @@
+.Category{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    padding: 5px;
+    background-color: 
+    #EAECF3;
+    border-radius: 10px;
+    border: none;
+}
+
+.Filter{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Sort{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+}

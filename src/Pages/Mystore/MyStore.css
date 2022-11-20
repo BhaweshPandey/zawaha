@@ -8,7 +8,7 @@
 .Mystore-header{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    
 }
 
 .Mystore-location{
@@ -17,15 +17,24 @@
 }
 
 .Mystore-location-profile{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .Mystore-location-shop{
  color: black;
 }
 
+.Mystore-location-shop-heading{
+    Font-family: Nunito Sans;
+    Font-style: ExtraBold;
+    Font-size: 30px;
+}
+
 .Mystore-location-shop-details{
     display: flex;
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 20px;
 }
 
 .Mystore-locatin-shop-rating{
@@ -36,23 +45,77 @@
     display: flex;
 }
 
-.Mystore-location-item-no-box{
-    background-color: grey;
-    border-radius: 10px;
-    width: 200px;
-    padding: 20px;
-    height: 125px;
-    margin-right: 20px;
-    margin-top: 10px;
+.information-btn{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 18px;
+    background-color: black;
+    color: white;
 }
 
-.Mystore-location-per-item{
+.customer-btn{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 18px;
+    border: 1px solid #ECEDFB;
+    background-color: white;
+}
+
+.Mystore-location-information{
     display: flex;
     justify-content: space-between;
-    margin-top: -20px;
+}
+
+.MyStore-selects{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 
 }
 
-.Mystore-location-box-p{
-    margin-top: -20px;
+input{
+    background-color: 
+    #EAECF3;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width:900px) {
+
+    .MyStore{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Mystore-header{
+        justify-content: space-between;
+    }
+
+    .Mystore-location{
+        flex-direction: column;
+    }
+
+    .MyStore-selects{
+        flex-direction: column;
+    }
+
+    input{
+        width: 150px;
+    }
+
+    .Mystore-location-information{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Mystore-location-shop{
+        width: 200px;
+    }
+
+    
 }

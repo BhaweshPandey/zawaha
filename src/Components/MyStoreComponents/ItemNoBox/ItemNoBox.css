@@ -1,0 +1,42 @@
+.Mystore-location-item-no-box{
+    background-color: 
+    #EAECF3;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    height: 125px;
+    margin-right: 5px;
+}
+
+.Mystore-location-per-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    margin-top: -20px;
+
+}
+
+.Mystore-location-box-p{
+    margin-top: -20px;
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 16px;
+}
+
+@media (max-width:900px) {
+
+    .Mystore-location-item-no-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    .Mystore-location-box-p{
+        font-size: 13px;
+    }
+
+}

@@ -3,12 +3,13 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    margin: 5px 35px;
+    
 }
 
 .heading{
@@ -21,49 +22,91 @@ header{
 }
 
 .h-left-1{
-    margin: 10px;
+    margin: 5px;
 }
 
 .h-left-2{
-    margin: 10px;
+ margin: 5px;
 }
 
 .h-right{
     display: flex;
     align-items: flex-end;
-    margin-right: 10px;
+    gap: 20px;
+}
+
+.item-box-map{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
 }
 
 .item-box{
-    border: 5px solid  #EAECF3;
-    width: 400px;
-    border-radius: 5px;
+    border: 1px solid  #EAECF3;
+    width: 335px;
+    border-radius: 20px;
 }
 
 .item-box-top{
-    border: 5px solid #EAECF3;
+    border: 1px solid #EAECF3;
     display: flex;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .item-img-right{
     margin-left: 5px;
 }
 
+.item-img-right-top{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 15px;
+}
+.item-img-right-mid{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 14px;
+}
+.item-img-right-btn{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 13px;
+}
+
 
 .item-box-bottom{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
-.item-boxs{
-    display: flex;
-    gap:30px;
-    margin: 0 auto;
+.item-box-bottom-top{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.item-box-bottom-bottom{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 20px;
+    margin-top: 0px;
+}
+
+.item-box-bottom-btn1{
+    border:1px solid #EAECF3;
+    background-color: white;
+}
+
+.item-box-bottom-btn2{
+    background-color: black;
+    color: white;
 }
 
 button{
-    border-radius: 9px;
+    border-radius: 27.5px;
     padding: 7px;
     width: 150px;
     border: #EAECF3;
