@@ -9,17 +9,16 @@ import ItemNoBox from '../../Components/MyStoreComponents/ItemNoBox/ItemNoBox';
 import { BsReception0 } from "react-icons/bs";
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
 import Sort from '../../Components/MyStoreComponents/Sort/Sort';
+import pointer from '../../Images/Combined Shape Copy.png'
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { BsSearch } from "react-icons/bs";
 import FoodCard from '../../Components/MyStoreComponents/MyStoreFoodCard/FoodCard';
+import { Header } from '../../Components/MyStoreComponents/Header/Header';
 
 const MyStore = () => {
   return (
     <div className='MyStore'>
-      <div className='Mystore-header'>
-        <h2>My Store</h2>
-        <img height='50px' src={bell} alt='' />
-      </div>
+      <Header name={"My Store"}/>
       <div className='Mystore-location'>
         <div className='Mystore-location-profile'>
         <img src={Bitmap} alt='' />
@@ -47,12 +46,16 @@ const MyStore = () => {
         <ItemNoBox />
       </div>
       <div className='MyStore-selects'>
-        <SelectsBox all={"All category"} Category1={"Category name here"} Category2={"Category name here"} Category3={"Category name here"} Category4={"Category name here"} Category5={"Category name here"} style={"Category"} />
-        <BsReception0/>
-        <input type="text" placeholder="Search" />
-        <Filter style={"Filter"} />
-        <Sort style={"Sort"}/>
-        <IoIosAddCircleOutline />
+        <div className='MyStore-selects-left'>
+          <SelectsBox all={"All category"} Category1={"Category name here"} Category2={"Category name here"} Category3={"Category name here"} Category4={"Category name here"} Category5={"Category name here"} style={"Category"} />
+          <img src={pointer} className='pointer' height='6px'  />
+        </div>
+        <div className='MyStore-selects-right'>
+          <input type="text" placeholder="Search" />
+          <Filter style={"Filter"} />
+          <Sort style={"Sort"}/>
+          <IoIosAddCircleOutline />
+        </div>
       </div>
       <div className='Food-card'>
         <FoodCard />

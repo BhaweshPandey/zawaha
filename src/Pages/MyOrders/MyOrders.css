@@ -117,3 +117,27 @@ button{
 .d-flex{
     display: flex;
 }
+
+@media (max-width:600px) {
+    .MyOrders{
+        width: 100%;
+    }
+
+
+    .h-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h-right{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+
+    .item-box-map{
+        justify-content: center;
+    }
+    
+}

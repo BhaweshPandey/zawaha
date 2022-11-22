@@ -1,8 +1,7 @@
 .FoodCard-map{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 80px;
 }
 
 .FoodCard{
@@ -33,9 +32,14 @@
     Font-size: 20px;
 }
 
+.foodcard-point{
+padding-top: 7px;
+}
+
 @media (max-width:900px) {
     .FoodCard-map{
         flex-direction: column;
+        gap: 20px;
         
     }
 

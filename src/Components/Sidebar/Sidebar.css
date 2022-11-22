@@ -9,12 +9,32 @@
     margin-left: 0px;
 }
 
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li:hover{
+    background-color: rgb(160, 160, 124);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+NavLink{
+    list-style: none;
+    text-decoration: none;
+}
+
+
 li {
     list-style: none;
     text-decoration: none;
     Font-family: Nunito Sans;
     Font-style: Bold;
     Font-size: 22px;
+    padding: 7px;
 }
 
 @media (max-width:900px) {

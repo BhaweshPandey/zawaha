@@ -5,20 +5,11 @@
     right: 0px;
 }
 
-.Mystore-header{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
 .Mystore-location{
     display: flex;
     justify-content: space-between;
 }
 
-.Mystore-location-profile{
-    margin-left: 20px;
-}
 
 .Mystore-location-shop{
  color: black;
@@ -68,14 +59,31 @@
 
 .MyStore-selects{
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 5px;
 
+}
+
+.MyStore-selects-left{
+    display: flex;
+    gap: 50px;
+}
+
+.pointer{
+    padding-top: 10px;
+}
+
+.MyStore-selects-right{
+    display: flex;
+    gap: 30px;
 }
 
 input{
     background-color: 
     #EAECF3;
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 17px;
     text-align: center;
     border-radius: 10px;
     border: none;
@@ -98,15 +106,14 @@ input{
 
     .Mystore-location{
         flex-direction: column;
+        gap: 5px;
     }
 
     .MyStore-selects{
         flex-direction: column;
+        gap: 5px;
     }
 
-    input{
-        width: 150px;
-    }
 
     .Mystore-location-information{
         flex-direction: column;
@@ -115,6 +122,11 @@ input{
 
     .Mystore-location-shop{
         width: 200px;
+    }
+
+    .MyStore-selects-right{
+        flex-direction: column;
+        gap: 1px
     }
 
     

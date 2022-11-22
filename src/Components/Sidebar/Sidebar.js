@@ -2,6 +2,11 @@ import React from 'react'
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom'
 import img from '../../Images/Rectangles.jpg'
+import Home from '../../Images/HomeIcon.png'
+import MyStore from '../../Images/MyStore.png'
+import MyOrder from '../../Images/MyOrder.png'
+import Proposal from '../../Images/Proposal.png'
+import Promotion from '../../Images/Promotion.png'
 
 const Sidebar = () => {
   return (
@@ -10,19 +15,19 @@ const Sidebar = () => {
         <nav>
             <ul>
                 <li className='sidebar-home'>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/"><img src={Home}/>  Home</NavLink>
                 </li>
                 <li className='sidebar-MyStore'>
-                    <NavLink to="/MyStore">MyStore</NavLink>
+                    <NavLink to="/MyStore"><img src={MyStore}/>  MyStore</NavLink>
                 </li>
                 <li className='sidebar-MyOrders'>
-                    <NavLink to="/MyOrders">MyOrders</NavLink>
+                    <NavLink to="/MyOrders"><img src={MyOrder}/>  MyOrders</NavLink>
                 </li>
                 <li className='sidebar-Promotion'>
-                    <NavLink to="/Promotion">Promotion</NavLink>
+                    <NavLink to="/Promotion"><img src={Promotion}/>  Promotion</NavLink>
                 </li>
                 <li className='sidebar-Proposal'>
-                    <NavLink to="/Proposal">Proposal</NavLink>
+                    <NavLink to="/Proposal"><img src={Proposal}/>  Proposal</NavLink>
                 </li>
             </ul>
         </nav>
