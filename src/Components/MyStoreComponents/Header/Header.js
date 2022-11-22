@@ -6,7 +6,7 @@ export const Header = ({name}) => {
   return (
     <div className='Header'>
          <h2>{name}</h2>
-        <img height='50px' src={bell} alt='' />
+        <img className='notification' height='50px' src={bell} alt='' />
     </div>
   )
 }

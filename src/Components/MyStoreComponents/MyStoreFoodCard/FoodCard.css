@@ -1,7 +1,7 @@
 .FoodCard-map{
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 55px;
 }
 
 .FoodCard{

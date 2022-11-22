@@ -6,15 +6,14 @@ import CurrentlyActiveOrder from '../../Components/HomeComponents/CurrentlyActiv
 import TotalOrdersCard from '../../Components/HomeComponents/TotalOrdersCard/TotalOrdersCard'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
+import { Header } from '../../Components/MyStoreComponents/Header/Header'
 
 const Home = () => {
   return (
     <div className='Home'>
         <div className='Home-heading'>
-            <h2>Home
+            <Header name={"Home"} />
             <button className='hamburger-menu'><BsList/></button>
-            </h2>
-            <img height='60px' src={bell} alt='' />
         </div>
         <div className='Home-header'>
             <div className='Home-circle'>

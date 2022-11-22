@@ -11,6 +11,7 @@
 
 .Home-heading{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     Font-family: Arial;
     Font-style: Bold;
@@ -53,6 +54,10 @@
     margin-top: 0px;
     font-size: 16px;
     color: #59595B;
+}
+
+.circle-inear-p-s:hover{
+    cursor: pointer;
 }
 
 .HomeTopBox{
