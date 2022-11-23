@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import img from '../../Images/Rectangles.jpg'
 import Home from '../../Images/HomeIcon.png'
 import MyStore from '../../Images/MyStore.png'
@@ -16,19 +16,19 @@ const Sidebar = () => {
         <nav>
             <ul>
                 <li className='sidebar-home'>
-                    <NavLink to="/"><img src={Home}/>  Home</NavLink>
+                    <Link to="/"><img src={Home}/>  Home</Link>
                 </li>
                 <li className='sidebar-MyStore'>
-                    <NavLink to="/MyStore"><img src={MyStore}/>  MyStore</NavLink>
+                    <Link to="/MyStore"><img src={MyStore}/>  MyStore</Link>
                 </li>
                 <li className='sidebar-MyOrders'>
-                    <NavLink to="/MyOrders"><img src={MyOrder}/>  MyOrders</NavLink>
+                    <Link to="/MyOrders"><img src={MyOrder}/>  MyOrders</Link>
                 </li>
                 <li className='sidebar-Promotion'>
-                    <NavLink to="/Promotion"><img src={Promotion}/>  Promotion</NavLink>
+                    <Link to="/Promotion"><img src={Promotion}/>  Promotion</Link>
                 </li>
                 <li className='sidebar-Proposal'>
-                    <NavLink to="/Proposal"><img src={Proposal}/>  Proposal</NavLink>
+                    <Link to="/Proposal"><img src={Proposal}/>  Proposal</Link>
                 </li>
             </ul>
         </nav>
