@@ -1,6 +1,7 @@
 import React from 'react'
 import './CurrentlyActiveOrder.css'
 import { BsChevronRight } from "react-icons/bs";
+import Arrow from '../../../Images/arrow.png'
 
 const CurrentlyActiveOrder = () => {
   return (
@@ -23,9 +24,12 @@ const CurrentlyActiveOrder = () => {
                 <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>Elise Beverley</h3>
                 <p className='CurrentlyActiveOrder-box-inear-c1-r2'>Wedding & anniversary</p>
             </div>
+            <div className='CurrentlyActiveOrder-box-inear-text'>
             <div className='CurrentlyActiveOrder-box-inear'>
                 <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>$240.00   4 items</h3>
                 <p className='CurrentlyActiveOrder-box-inear-c2-r2'>Ordered on Jan 2nd, 2021</p>
+                </div>
+                <img className='CurrentlyActiveOrder-box-inear-arrow'  src={Arrow } />
             </div>
         </div>
         ))}
