@@ -4,14 +4,16 @@ import foot from '../../Images/Bitmap.png';
 import bell from '../../Images/menutop copy.png';
 import Sort from '../../Components/MyStoreComponents/Sort/Sort';
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
+import { Header } from '../../Components/MyStoreComponents/Header/Header';
 
 const MyOrders = () => {
   return (
     <div className='MyOrders'>
-      <header>
+      {/* <header>
         <h2>My order</h2>
         <img height='50px' src={bell} alt='' />
-      </header>
+      </header> */}
+      <Header name={"MyOrders"}/>
       <div className='heading'>
         <span className='h-left'>
           <h4 className='h-left-1'>Active Orders</h4>

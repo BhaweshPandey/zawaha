@@ -1,0 +1,27 @@
+.Admin{
+    display: flex;
+    width: 220px;
+    height: 63px;
+    background-color: #F7F8FB;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Admin-name{
+    padding: 15px;
+}
+
+.Admin-h3{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.Admin-p{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 13px;
+    margin-top: 0px;
+}

@@ -1,0 +1,19 @@
+.SelectBoxDay{
+    background-color: white;
+    border: white;
+    color: #59595B;
+
+}
+
+.SelectBoxDay-s{
+    border: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+
+    .SelectBoxDay-s{
+        padding: 1px;
+    }
+}

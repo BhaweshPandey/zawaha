@@ -1,7 +1,7 @@
 import React from 'react'
 import './homeTopBox.css'
 
-const HomeTopBox = ({styles , text , number}) => {
+const HomeTopBox = ({styles , text , number,circleStyle}) => {
   return (
     <div className={styles}>
     <p className='homeTopBox-p'>{text}</p>

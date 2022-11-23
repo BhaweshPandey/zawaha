@@ -1,5 +1,5 @@
 .CurrentlyActiveOrder{
-    width: 680px;
+    width: 670px;
     height: 516px;
     border: 1px solid #EAECF3;
     border-radius: 26px;
@@ -97,18 +97,30 @@
 .CurrentlyActiveOrder-box{
     display: flex;
     justify-content: space-between;
-    padding: 0px 7px;
-    width: 664px;
+    padding: 0px 10px;
+    width: 654px;
     height: 83px;
     border-radius: 20px;
     background-color: #F7F8FB;
 }
 
-.CurrentlyActiveOrder-box:hover{
+/* .CurrentlyActiveOrder-box:hover{
     width: 690px;
     height: 90px;
     border-radius: 25px;
     background-color: #ced1da;
+} */
+
+.CurrentlyActiveOrder-box-inear-text{
+    display: flex;
+    
+}
+
+.CurrentlyActiveOrder-box-inear-arrow{
+    height: 20px;
+    padding:28px 15px;
+    cursor: pointer;
+    
 }
 
 .CurrentlyActiveOrder-box-inear-c1-r1{
@@ -166,7 +178,7 @@
     .CurrentlyActiveOrder-button{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         color: #D8D8D9;
     }
     

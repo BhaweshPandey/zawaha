@@ -3,6 +3,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    padding: 10px;
 }
 
 .hamburger-menu{
@@ -25,8 +26,8 @@
 
 .Home-circle{
     border: 18px solid red;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     margin-top: 10px;
 
@@ -70,6 +71,7 @@
 .Home-mid{
     display: flex;
     gap: 10px;
+    padding-top: 10px;
     margin-top: 10px;
 }
 
@@ -83,8 +85,8 @@
     .Home-circle{
 
         border: 5px solid red;
-        width: 100px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
         border-radius: 100%;
         margin-top: 5px;
     
@@ -135,6 +137,8 @@
     }
     
 }
+
+
 
 @media (max-width:500px) {
     .Home{

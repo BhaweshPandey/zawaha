@@ -7,6 +7,7 @@ import MyStore from '../../Images/MyStore.png'
 import MyOrder from '../../Images/MyOrder.png'
 import Proposal from '../../Images/Proposal.png'
 import Promotion from '../../Images/Promotion.png'
+import Admin from '../Admin/Admin'
 
 const Sidebar = () => {
   return (
@@ -31,6 +32,9 @@ const Sidebar = () => {
                 </li>
             </ul>
         </nav>
+        <div className='Admin-box'>
+            <Admin />
+        </div>
     </div>
   )
 }

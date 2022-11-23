@@ -10,10 +10,11 @@ import { BsReception0 } from "react-icons/bs";
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
 import Sort from '../../Components/MyStoreComponents/Sort/Sort';
 import pointer from '../../Images/Combined Shape Copy.png'
-import { IoIosAddCircleOutline } from "react-icons/io";
+import AddBtn from '../../Images/add btn.jpg';
 import { BsSearch } from "react-icons/bs";
 import FoodCard from '../../Components/MyStoreComponents/MyStoreFoodCard/FoodCard';
 import { Header } from '../../Components/MyStoreComponents/Header/Header';
+import Notification from '../../Components/Notification/Notification';
 
 const MyStore = () => {
   return (
@@ -27,11 +28,11 @@ const MyStore = () => {
           <h2 className='Mystore-location-shop-heading'>Vendor name lorem ipsum</h2>
           <div className='Mystore-location-shop-details'>
             <div className='Mystore-locatin-shop-rating'>
-              <img height='15px' src={Star} alt='' />
+              <img height='15px' className='Mystore-locatin-shop-ratin-img' src={Star} alt='' />
               <p>4.2</p>
             </div>
             <div className='Mystore-location-shop-address'>
-              <img height='15px' src={Shape} alt='' />
+              <img height='15px' className='Mystore-locatin-shop-address-img' src={Shape} alt='' />
               <p>Bangelore</p>
             </div>
             <div className='Myshop-location-shop-items'>
@@ -54,7 +55,7 @@ const MyStore = () => {
           <input type="text" placeholder="Search" />
           <Filter style={"Filter"} />
           <Sort style={"Sort"}/>
-          <IoIosAddCircleOutline />
+          <img className='Addbtn' height='27px' src={AddBtn} />
         </div>
       </div>
       <div className='Food-card'>

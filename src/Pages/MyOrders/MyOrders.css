@@ -3,6 +3,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    padding: 10px;
     
 }
 
@@ -19,6 +20,7 @@ header{
 
 .h-left{
     display: flex;
+    gap: 20px;
 }
 
 .h-left-1{
@@ -39,6 +41,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 17px;
+    padding-top: 10px;
 }
 
 .item-box{

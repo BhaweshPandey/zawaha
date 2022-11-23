@@ -10,6 +10,7 @@ import MyOrders from './Pages/MyOrders/MyOrders';
 import Promotion from './Pages/Promotion/Promotion';
 import Proposal from './Pages/Proposal/Proposal';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Notification from './Components/Notification/Notification';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Proposal' element={<Proposal />} />
         </Routes>
       </BrowserRouter>
+      <Notification/>
     </div>
   );
 }
