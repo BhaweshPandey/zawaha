@@ -9,6 +9,17 @@
     
 }
 
+
+.foodcard-checkbox{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    position: absolute;
+    
+    
+}
+
 .food-img{
     border-radius: 10px;
 }

@@ -8,6 +8,7 @@ const FoodCard = () => {
     <div className='FoodCard-map'>
     {[1,2,3,4,5,6].map((item,setitem)=>(
     <div className='FoodCard'>
+        <label><input className='foodcard-checkbox' type="checkbox" /></label>
         <img className='food-img' width='300px' height='150px' src={Food} alt='' />
         <p className='FoodCard-p'>Item name lorem ipsum dolor</p>
         <div className='FoodCard-rs'>

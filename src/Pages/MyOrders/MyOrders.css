@@ -121,9 +121,17 @@ button{
     display: flex;
 }
 
+@media only screen and (max-width:900px) {
+
+    .MyOrders{
+        width: auto;
+    }
+    
+}
+
 @media (max-width:600px) {
     .MyOrders{
-        width: 100%;
+        width: auto;
     }
 
 

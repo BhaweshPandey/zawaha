@@ -21,6 +21,7 @@
 
 .Home-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -70,19 +71,20 @@
 
 .Home-mid{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     padding-top: 10px;
     margin-top: 10px;
 }
 
-@media (max-width:900px) {
+@media only screen and (max-width:900px) {
 
     .Home{
         display: 100%;
         position: relative;
     
     }
-    .Home-circle{
+    /* .Home-circle{
 
         border: 5px solid red;
         width: 150px;
@@ -90,7 +92,7 @@
         border-radius: 100%;
         margin-top: 5px;
     
-    }
+    } */
 
     .circle-inear{
         display: flex;
@@ -99,7 +101,7 @@
         
     }
 
-    .circle-inear-h{
+    /* .circle-inear-h{
         font-size: 18px;
         margin-bottom: 0px;
     }
@@ -114,17 +116,23 @@
         margin-top: 0px;
         font-size: 6px;
         color: #59595B;
-    }
+    } */
 
     .Home-header{
         flex-direction: column;
         align-items: center;
     }
 
+    .hamburger-menu{
+        display: flex;
+        background-color: white;
+    }
+
     .HomeTopBox{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         /* justify-content: space-between; */
         gap: 10px;
     }
@@ -140,9 +148,9 @@
 
 
 
-@media (max-width:500px) {
+@media only screen and (max-width:500px) {
     .Home{
-        width: 100%;
+        width: auto;
         height: 100vh;
     }
 
@@ -162,12 +170,15 @@
     .HomeTopBox{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 
     .Home-header{
         display: flex;
         align-items: center;
+        /* justify-content: center; */
         flex-direction: column;
     }
 

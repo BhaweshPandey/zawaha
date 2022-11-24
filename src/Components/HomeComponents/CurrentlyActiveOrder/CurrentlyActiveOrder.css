@@ -1,5 +1,5 @@
 .CurrentlyActiveOrder{
-    width: 670px;
+    width: 650px;
     height: 516px;
     border: 1px solid #EAECF3;
     border-radius: 26px;
@@ -151,7 +151,7 @@
     Font-size: 15px;
 }
 
-@media (max-width:900px) {
+@media only screen and (max-width:900px) {
     
     .CurrentlyActiveOrder{
         width: 600px;
@@ -164,7 +164,7 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media only screen and (max-width:600px) {
     
     .CurrentlyActiveOrder{
         display: flex;
