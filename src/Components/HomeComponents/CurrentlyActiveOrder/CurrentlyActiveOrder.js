@@ -4,6 +4,36 @@ import { BsChevronRight } from "react-icons/bs";
 import Arrow from '../../../Images/arrow.png'
 
 const CurrentlyActiveOrder = () => {
+    const order =[{
+        name:"Elise Beverley",
+        wedding:"Wedding & anniversary",
+        price:"$240.00 4 items",
+        date:"Ordered on Jan 2nd, 2021",
+        category:"Order placed"
+    },
+    {
+        name:"Elise Beverley",
+        wedding:"Wedding & anniversary",
+        price:"$240.00 4 items",
+        date:"Ordered on Jan 2nd, 2021",
+        category:"Order placed"
+    },
+    {
+        name:"Elise Beverley",
+        wedding:"Wedding & anniversary",
+        price:"$240.00 4 items",
+        date:"Ordered on Jan 2nd, 2021",
+        category:"Order placed"
+    },
+    {
+        name:"Elise Beverley",
+        wedding:"Wedding & anniversary",
+        price:"$240.00 4 items",
+        date:"Ordered on Jan 2nd, 2021",
+        category:"Order placed"
+    }]
+
+
   return (
     <div className='CurrentlyActiveOrder'>
         <div className='CurrentlyActiveOrder-heading'>
@@ -18,16 +48,16 @@ const CurrentlyActiveOrder = () => {
         </div>
 
         <div className='CurrentlyActiveOrder-box-map'>
-        {[1 , 2, 3 ,4].map((item,setIetem)=>(
+        {order.map((item,setIetem)=>(
         <div className='CurrentlyActiveOrder-box'>
             <div className='CurrentlyActiveOrder-box-inear'>
-                <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>Elise Beverley</h3>
-                <p className='CurrentlyActiveOrder-box-inear-c1-r2'>Wedding & anniversary</p>
+                <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>{item.name}</h3>
+                <p className='CurrentlyActiveOrder-box-inear-c1-r2'>{item.wedding}</p>
             </div>
             <div className='CurrentlyActiveOrder-box-inear-text'>
             <div className='CurrentlyActiveOrder-box-inear'>
-                <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>$240.00   4 items</h3>
-                <p className='CurrentlyActiveOrder-box-inear-c2-r2'>Ordered on Jan 2nd, 2021</p>
+                <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>{item.price}</h3>
+                <p className='CurrentlyActiveOrder-box-inear-c2-r2'>{item.date}</p>
                 </div>
                 <img className='CurrentlyActiveOrder-box-inear-arrow'  src={Arrow } />
             </div>
