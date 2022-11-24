@@ -80,7 +80,7 @@
 @media only screen and (max-width:900px) {
 
     .Home{
-        display: 100%;
+        width: auto;
         position: relative;
     
     }

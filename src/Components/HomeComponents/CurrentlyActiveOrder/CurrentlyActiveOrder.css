@@ -169,7 +169,7 @@
     .CurrentlyActiveOrder{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         height: 460px;
         border: 1px solid #EAECF3;
         border-radius: 26px;
