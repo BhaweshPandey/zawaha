@@ -11,6 +11,7 @@ import Admin from '../Admin/Admin'
 
 const Sidebar = () => {
   return (
+    <div>
     <div className='Sidebar'>
      <img className='sidebar-img' src={img} alt='' />
         <nav>
@@ -35,6 +36,28 @@ const Sidebar = () => {
         <div className='Admin-box'>
             <Admin />
         </div>
+    </div>
+    {/* <div className='Sidebar-mobile'>
+        <nav>
+            <ul>
+                <li className='sidebar-home'>
+                    <Link to="/"><img src={Home}/>  Home</Link>
+                </li>
+                <li className='sidebar-MyStore'>
+                    <Link to="/MyStore"><img src={MyStore}/>  MyStore</Link>
+                </li>
+                <li className='sidebar-MyOrders'>
+                    <Link to="/MyOrders"><img src={MyOrder}/>  MyOrders</Link>
+                </li>
+                <li className='sidebar-Promotion'>
+                    <Link to="/Promotion"><img src={Promotion}/>  Promotion</Link>
+                </li>
+                <li className='sidebar-Proposal'>
+                    <Link to="/Proposal"><img src={Proposal}/>  Proposal</Link>
+                </li>
+            </ul>
+        </nav>
+    </div> */}
     </div>
   )
 }

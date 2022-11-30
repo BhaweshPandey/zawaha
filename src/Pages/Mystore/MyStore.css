@@ -54,6 +54,7 @@
     Font-size: 18px;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 .customer-btn{
@@ -62,6 +63,7 @@
     Font-size: 18px;
     border: 1px solid #ECEDFB;
     background-color: white;
+    cursor: pointer;
 }
 
 .Mystore-location-information{
@@ -102,10 +104,36 @@ input{
     border: none;
 }
 
+.Filter-btn{
+    border: 2px solid #EAECF3;
+    background-color: white;
+    border-radius: 5px;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    width: 93px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Sort-btn{
+    border: 2px solid #EAECF3;
+    background-color: white;
+    border-radius: 5px;
+    width: 87px;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
 @media (max-width:900px) {
 
     .MyStore{
-        width: 100%;
+        width: auto;
         display: flex;
         position: relative;
         flex-direction: column;
@@ -147,14 +175,5 @@ input{
         width: 30px;
     }
 
-    
-}
-
-
-@media only screen and (max-width:600px) {
-
-    .MyStore{
-        width: auto;
-    }
     
 }
