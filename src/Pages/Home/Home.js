@@ -28,7 +28,7 @@ const Home = () => {
             <div className='HomeTopBox'>
                 <HomeTopBox text={"Currently active"} number={"42"} styles={"HomeTopBox-box"} circleStyle={"circle1"} />
                 <HomeTopBox text={"Completed"} number={"127"} styles={"HomeTopBox-box"} circleStyle={"circle2"} />
-                <HomeTopBox text={"Cancelled"} number={"18"} styles={"HomeTopBox-box"} />
+                <HomeTopBox text={"Cancelled"} number={"18"} styles={"HomeTopBox-box"} circleStyle={"circle3"} />
             </div>
         </div>
         <div className='Home-mid'>

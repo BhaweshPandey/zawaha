@@ -40,3 +40,14 @@
     }
 
 }
+
+@media (max-width:600px) {
+    
+    .Mystore-location-item-no-box{
+        width: 250px;
+    }
+
+    .Mystore-location-per-item{
+        gap: 30px;
+    }
+}

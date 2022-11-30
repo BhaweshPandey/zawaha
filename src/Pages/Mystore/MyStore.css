@@ -168,7 +168,7 @@ input{
 
     .MyStore-selects-right{
         flex-direction: column;
-        gap: 1px
+        gap: 5px
     }
 
     .Addbtn{
@@ -176,4 +176,32 @@ input{
     }
 
     
+}
+
+
+@media (max-width:600px) {
+    
+    .information-btn{
+        width: 250px;
+    }
+
+    .customer-btn{
+        width: 250px;
+    }
+
+    .MyStore-selects-righ{
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Filter-btn{
+        width: 250px;
+    }
+
+    .Sort-btn{
+        width: 250px;
+    }
 }
