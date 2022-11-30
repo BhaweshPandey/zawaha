@@ -82,6 +82,10 @@
     .Home{
         width: auto;
         position: relative;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
     
     }
     /* .Home-circle{
@@ -93,6 +97,10 @@
         margin-top: 5px;
     
     } */
+
+    .Home-heading{
+        gap: 2px;
+    }
 
     .circle-inear{
         display: flex;
@@ -123,10 +131,10 @@
         align-items: center;
     }
 
-    .hamburger-menu{
+    /* .hamburger-menu{
         display: flex;
         background-color: white;
-    }
+    } */
 
     .HomeTopBox{
         display: flex;
@@ -153,6 +161,7 @@
     .Home{
         width: auto;
         height: 100vh;
+        
     }
 
     .hamburger-menu{
@@ -165,12 +174,13 @@
         justify-content: space-between;
         Font-family: Arial;
         Font-style: Bold;
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .HomeTopBox{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
         justify-content: center;
         align-items: center;
     }
@@ -179,6 +189,7 @@
     .Home-header{
         display: flex;
         align-items: center;
+        flex-wrap: nowrap;
         /* justify-content: center; */
         flex-direction: column;
     }
@@ -225,6 +236,7 @@
         justify-content: center;
         margin-top: 10px;
         width: 100%;
+        flex-wrap: nowrap;
     }
 
     .Home-heading{

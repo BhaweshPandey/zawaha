@@ -1,0 +1,45 @@
+.Filter{
+    width: 420px;
+    height: 634px;
+    background-color: #FFFFFF ;
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid #faf4f4;
+}
+
+.Filter-heading{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Filter-heading-text{
+    Font-family: Nunito Sans;
+    Font-style: ExtraBold;
+    Font-size: 24px;
+}
+
+.Arrowup{
+    padding-top: 23px;
+    padding-right: 20px;
+}
+
+.Filter-h3{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+}
+
+
+.Filter-select-btn{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 16px;
+    background-color: white;
+    border: 1px solid #EAECF3;
+    border-radius: 22.5px;
+    width: 125px;
+    margin-right: 16px;
+    cursor: pointer;
+}

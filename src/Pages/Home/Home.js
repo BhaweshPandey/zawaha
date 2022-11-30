@@ -14,7 +14,7 @@ const Home = () => {
     <div className='Home'>
         <div className='Home-heading'>
             <Header name={"Home"} />
-            <button className='hamburger-menu'><BsList/></button>
+            {/* <button className='hamburger-menu'><BsList/></button> */}
         </div>
         <div className='Home-header'>
             <div className='Home-circle'>

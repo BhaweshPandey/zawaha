@@ -9,9 +9,9 @@ const SelectsBox = ({all , Category1 , Category2 , Category3 , Category4 ,Catego
             <option value="All category">{all}</option>
             <option value="Category name here">{Category1}</option>
             <option value="Category name here">{Category2}</option>
-            <option value="Category name here" selected>{Category3}</option>
-            <option value="Category name here" selected>{Category4}</option>
-            <option value="Category name here" selected>{Category5}</option>
+            <option value="Category name here" >{Category3}</option>
+            <option value="Category name here" >{Category4}</option>
+            <option value="Category name here" >{Category5}</option>
         </select>
     </div>
   )

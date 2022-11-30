@@ -1,7 +1,10 @@
 .Sidebar{
     width: 18%;
     border-right: 2px solid #EAECF3;
-    height: 140vh;
+}
+
+.Sidebar-mobile{
+    display: none;
 }
 
 .sidebar-img{
@@ -43,7 +46,7 @@ li {
 .Admin-box{
     display: flex;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 500px;
 }
 
 @media (max-width:900px) {
@@ -51,6 +54,17 @@ li {
     .Sidebar{
         display: none;
     }
+
+    /* .Sidebar-mobile{
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         background-color: white;
+         width: 200px;
+         height: 300px;
+         top: 60px;
+         left: 0px;
+    } */
 }
 
 @media (max-width:600px) {

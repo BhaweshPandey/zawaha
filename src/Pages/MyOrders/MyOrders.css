@@ -37,6 +37,10 @@ header{
     gap: 20px;
 }
 
+.h-right-input{
+    height: 34px;
+}
+
 .item-box-map{
     display: flex;
     flex-wrap: wrap;

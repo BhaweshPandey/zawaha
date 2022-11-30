@@ -40,22 +40,11 @@
 }
 
 
-@media only screen and (max-width:600px) {
-    
-    .HomeTopBox-box{
-        width: 200px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-}
 
 @media (max-width:700px) {
 
     .HomeTopBox-box{
-        width: 360px;
+        width: 400px;
     }
     
 }
@@ -63,7 +52,29 @@
 @media only screen and (max-width:900px) {
 
     .HomeTopBox-box{
-        width: 400px;
+        width: 600px;
+        margin-top: 3px;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    
+    .HomeTopBox-box{
+        width: 350px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+}
+
+@media (max-width:400px) {
+
+    .HomeTopBox-box{
+        width: 310px;
     }
     
 }

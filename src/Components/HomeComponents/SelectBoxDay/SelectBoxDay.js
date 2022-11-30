@@ -6,7 +6,7 @@ const SelectBoxDay = () => {
     <div className='SelectBoxDay'>
         <select className='SelectBoxDay-s'>
             <option value={"Today"}>Today</option>
-            <option value={"This week"}>This week</option>
+            <option selected value={"This week"}>This week</option>
             <option value={"This month"}>This month</option>
             <option value={"This year"}>This year</option>
         </select>

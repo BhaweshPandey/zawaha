@@ -12,10 +12,39 @@
     padding-top: 10px;
 }
 
+
 @media (max-width:900px) {
 
     .Header{
         width: 100%;
     }
-    
+
+    .hamburger-menu{
+        background-color: white;
+        display: flex;
+        margin-top: 30px;
+
+        
+    }
+
+    .Header-heading-h2{
+        position:absolute;
+        left: 39px;
+        top: 0px;
+    }
+
+    .Header-heading{
+        display: flex;
+    }
 }
+
+@media (max-width:500px) {
+
+     .hamburger-menu{
+        /* background-color: white; */
+        position: absolute;
+        top: 9px;
+        
+    }
+}
+

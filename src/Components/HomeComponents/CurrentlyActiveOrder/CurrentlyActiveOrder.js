@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './CurrentlyActiveOrder.css'
 import { BsChevronRight } from "react-icons/bs";
 import Arrow from '../../../Images/arrow.png'
@@ -32,7 +32,6 @@ const CurrentlyActiveOrder = () => {
         date:"Ordered on Jan 2nd, 2021",
         category:"Order placed"
     }]
-
 
   return (
     <div className='CurrentlyActiveOrder'>

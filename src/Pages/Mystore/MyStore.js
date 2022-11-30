@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './MyStore.css'
 import Bitmap from '../../Images/Bitmap.jpg';
 import Star from '../../Images/Star.jpg';
@@ -15,8 +15,15 @@ import { BsSearch } from "react-icons/bs";
 import FoodCard from '../../Components/MyStoreComponents/MyStoreFoodCard/FoodCard';
 import { Header } from '../../Components/MyStoreComponents/Header/Header';
 import Notification from '../../Components/Notification/Notification';
+import { BsCaretDownFill } from "react-icons/bs";
+import Information from '../../Components/MyStoreComponents/Information/Information';
+import Rating from '../../Components/MyStoreComponents/Rating/Rating';
 
 const MyStore = () => {
+
+  const [item , setItem]= useState(false);
+  const [information , setInformation] = useState(false);
+  const [rating , setRating] =useState(false);
   return (
     <div className='MyStore'>
       <Header name={"My Store"}/>
@@ -40,8 +47,10 @@ const MyStore = () => {
             </div>
           </div>
           <div className='Mystore-location-information'>
-            <button className='information-btn'>Information</button>
-            <button className='customer-btn'>Customer rating</button>
+            <button className='information-btn' onClick={()=> setInformation(true)}>Information</button>
+            <Information information={information} onclose={() => setInformation(false)} />
+            <button className='customer-btn' onClick={() => setRating(true)}>Customer rating</button>
+            <Rating rating={rating} onclose={() => setRating(false)} />
           </div>
         </div>
         <ItemNoBox />
@@ -52,9 +61,12 @@ const MyStore = () => {
           <img src={pointer} className='pointer' height='6px'  />
         </div>
         <div className='MyStore-selects-right'>
-          <input type="text" placeholder="Search" />
-          <Filter style={"Filter"} />
-          <Sort style={"Sort"}/>
+          <input type="search" placeholder="Search" />
+          {/* <Filter style={"Filter"} /> */}
+          <button className='Filter-btn' onClick={() => setItem(true)}>Filter <BsCaretDownFill/> </button>
+          <Filter item={item} onclose={()=> setItem(false)} />
+          {/* <Sort style={"Sort"}/> */}
+          <button className='Sort-btn'>Sort <BsCaretDownFill/> </button>
           <img className='Addbtn' height='27px' src={AddBtn} />
         </div>
       </div>

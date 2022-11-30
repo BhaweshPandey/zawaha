@@ -1,0 +1,46 @@
+.Rating{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 480px;
+    height: 900px;
+    background-color: white;
+    border: 1px solid #EAECF3;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Rating-top{
+    display: flex;
+}
+
+.Rating-top-left{
+    text-align: center;
+    padding: 10px;
+    border-right: 2px solid #EAECF3;
+}
+
+.Rating-top-left-h1{
+    Font-family: Nunito Sans;
+    Font-style: ExtraBold;
+    Font-size: 32px;
+    margin-bottom: 0px;
+}
+
+.Rating-top-left-p{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 16px;
+    color: #59595B;
+    margin-top: 0px;
+}
+
+.Rating-span{
+    display: flex;
+    gap: 10px;
+    margin-top: 0px;
+}
+
+.Rating-span-img{
+    padding-top: 20px;
+}

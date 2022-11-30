@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MyOrders.css'
 import foot from '../../Images/Bitmap.png';
 import bell from '../../Images/menutop copy.png';
 import Sort from '../../Components/MyStoreComponents/Sort/Sort';
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
 import { Header } from '../../Components/MyStoreComponents/Header/Header';
+import { BsCaretDownFill } from "react-icons/bs";
 
 const MyOrders = () => {
+
   return (
     <div className='MyOrders'>
       {/* <header>
@@ -20,10 +22,9 @@ const MyOrders = () => {
           <h4 className='h-left-2'>Previous Orders</h4>
         </span>
         <span className='h-right'>
-          <textarea rows={1} placeholder='search'></textarea>
-          <Filter />
-          <Sort />
-
+          <input className='h-right-input' type='Search' placeholder='Search' />
+          <button className='Filter-btn'>Filter <BsCaretDownFill/> </button>
+          <button className='Sort-btn'>Sort <BsCaretDownFill/> </button>
         </span>
       </div>
 
