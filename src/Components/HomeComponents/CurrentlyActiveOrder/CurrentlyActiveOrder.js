@@ -31,27 +31,9 @@ const CurrentlyActiveOrder = () => {
                 wedding: "Wedding & anniversary",
                 price: "$240.00 4 items",
                 date: "Ordered on Jan 2nd, 2021",
-            },
-            {
-                name: "Elise Beverley",
-                wedding: "Wedding & anniversary",
-                price: "$240.00 4 items",
-                date: "Ordered on Jan 2nd, 2021",
-            },
-            {
-                name: "Elise Beverley",
-                wedding: "Wedding & anniversary",
-                price: "$240.00 4 items",
-                date: "Ordered on Jan 2nd, 2021",
-            },
+            }
         ],
         confirmedOrders: [
-            {
-                name: "Elise Beverley",
-                wedding: "Wedding & anniversary",
-                price: "$240.00 4 items",
-                date: "Ordered on Jan 2nd, 2021",
-            },
             {
                 name: "Elise Beverley",
                 wedding: "Wedding & anniversary",
@@ -101,13 +83,7 @@ const CurrentlyActiveOrder = () => {
                 wedding: "Wedding & anniversary",
                 price: "$240.00 4 items",
                 date: "Ordered on Jan 2nd, 2021",
-            },
-            {
-                name: "Elise Beverley",
-                wedding: "Wedding & anniversary",
-                price: "$240.00 4 items",
-                date: "Ordered on Jan 2nd, 2021",
-            },
+            }
         ],
         completedOrders: [
             {
@@ -133,13 +109,7 @@ const CurrentlyActiveOrder = () => {
                 wedding: "Wedding & anniversary",
                 price: "$240.00 4 items",
                 date: "Ordered on Jan 2nd, 2021",
-            },
-            {
-                name: "Elise Beverley",
-                wedding: "Wedding & anniversary",
-                price: "$240.00 4 items",
-                date: "Ordered on Jan 2nd, 2021",
-            },
+            }
         ]
     }
 
@@ -152,10 +122,19 @@ const CurrentlyActiveOrder = () => {
                 <h3>See all orders <BsChevronRight /></h3>
             </div>
             <div className='CurrentlyActiveOrder-button'>
-                <button className='CurrentlyActiveOrder-button-1'>Order placed</button>
-                <button className='CurrentlyActiveOrder-button-2'>Confirmed</button>
-                <button className='CurrentlyActiveOrder-button-3'>On process</button>
-                <button className='CurrentlyActiveOrder-button-4'>Completed</button>
+                <button
+                    onClick={() => setActiveButton("placedOrders")}
+                    className={`${activeButton == "placedOrders" ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-1`}>Order placed</button>
+                <button
+                    onClick={() => setActiveButton("confirmedOrders")}
+                    className=
+                    'CurrentlyActiveOrder-button-2'>Confirmed</button>
+                <button
+                    onClick={() => setActiveButton("onProcessOrders")}
+                    className='CurrentlyActiveOrder-button-3'>On process</button>
+                <button
+                    onClick={() => setActiveButton("completedOrders")}
+                    className='CurrentlyActiveOrder-button-4'>Completed</button>
             </div>
 
             <div className='CurrentlyActiveOrder-box-map'>
@@ -175,7 +154,7 @@ const CurrentlyActiveOrder = () => {
                     </div>
                 ))}
             </div>
-        </div >
+        </div>
     )
 }
 
