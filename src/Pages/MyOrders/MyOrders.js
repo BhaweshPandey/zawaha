@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './MyOrders.css'
 import foot from '../../Images/Bitmap.png';
 import bell from '../../Images/menutop copy.png';
-import Sort from '../../Components/MyStoreComponents/Sort/Sort';
+import Sort from '../../Components/MyStoreComponents/SortDropDown/SortDrop';
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
 import { Header } from '../../Components/MyStoreComponents/Header/Header';
 import { BsCaretDownFill } from "react-icons/bs";

@@ -11,12 +11,14 @@ import Promotion from './Pages/Promotion/Promotion';
 import Proposal from './Pages/Proposal/Proposal';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Notification from './Components/Notification/Notification';
+import MobileMenu from './Components/MobileMenu/MobileMenu';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Sidebar/>
+      <MobileMenu/>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/MyOrders' element={<MyOrders/>} />

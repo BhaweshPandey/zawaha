@@ -8,7 +8,7 @@ import SelectsBox from '../../Components/MyStoreComponents/SelectsBox/SelectsBox
 import ItemNoBox from '../../Components/MyStoreComponents/ItemNoBox/ItemNoBox';
 import { BsReception0 } from "react-icons/bs";
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
-import Sort from '../../Components/MyStoreComponents/Sort/Sort';
+import Sort from '../../Components/MyStoreComponents/SortDropDown/SortDrop';
 import pointer from '../../Images/Combined Shape Copy.png'
 import AddBtn from '../../Images/add btn.jpg';
 import { BsSearch } from "react-icons/bs";
@@ -18,12 +18,15 @@ import Notification from '../../Components/Notification/Notification';
 import { BsCaretDownFill } from "react-icons/bs";
 import Information from '../../Components/MyStoreComponents/Information/Information';
 import Rating from '../../Components/MyStoreComponents/Rating/Rating';
+import SortDrop from '../../Components/MyStoreComponents/SortDropDown/SortDrop';
 
 const MyStore = () => {
 
   const [item , setItem]= useState(false);
   const [information , setInformation] = useState(false);
   const [rating , setRating] =useState(false);
+  const [sort , setSort] = useState(false);
+  
   return (
     <div className='MyStore'>
       <Header name={"My Store"}/>
@@ -66,7 +69,8 @@ const MyStore = () => {
           <button className='Filter-btn' onClick={() => setItem(true)}>Filter <BsCaretDownFill/> </button>
           <Filter item={item} onclose={()=> setItem(false)} />
           {/* <Sort style={"Sort"}/> */}
-          <button className='Sort-btn'>Sort <BsCaretDownFill/> </button>
+          <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill/> </button>
+          <SortDrop sort={sort} onClose={() => setSort(false)} />
           <img className='Addbtn' height='27px' src={AddBtn} />
         </div>
       </div>

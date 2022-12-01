@@ -1,0 +1,15 @@
+.Sidebar-mobile{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: absolute; */
+    background-color: rgb(151, 151, 238);
+    width: 320px;
+    height: 230px;
+    margin-top: 60px;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 90px;
+    left: 270px;
+}

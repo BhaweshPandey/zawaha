@@ -3,9 +3,6 @@
     border-right: 2px solid #EAECF3;
 }
 
-.Sidebar-mobile{
-    display: none;
-}
 
 .sidebar-img{
     margin-top: 0px;
@@ -20,13 +17,12 @@ ul{
     flex-direction: column;
 }
 
-li:hover{
+/* li:hover{
     background-color: rgb(160, 160, 124);
     padding: 12px;
-    border-radius: 10px;
-}
+} */
 
-Link{
+NavLink{
     list-style: none;
     text-decoration: none;
     
@@ -55,16 +51,7 @@ li {
         display: none;
     }
 
-    /* .Sidebar-mobile{
-         display: flex;
-         flex-direction: column;
-         position: absolute;
-         background-color: white;
-         width: 200px;
-         height: 300px;
-         top: 60px;
-         left: 0px;
-    } */
+    
 }
 
 @media (max-width:600px) {

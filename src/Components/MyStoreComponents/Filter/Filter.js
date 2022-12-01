@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Filter.css'
 import Arrowup from '../../../Images/Arrowup.png'
+
+
 const Filter = ({item,onclose}) => {
   if(!item){
     return null;
 }
+
   return (
     <div className='Filter'>
         {/* <label for="category">Filter</label> */}
@@ -19,7 +22,8 @@ const Filter = ({item,onclose}) => {
           <div className='Filter-input-select'>
              <h3 className='Filter-h3'>Item type</h3>
              <div className='Filter-span'>
-              <button className='Filter-select-btn'>Service only</button>
+              <button className='Filter-select-btn'
+              >Service only</button>
               <button className='Filter-select-btn'>Product only</button>
              </div>
           </div>
@@ -30,5 +34,6 @@ const Filter = ({item,onclose}) => {
     </div>
   )
 }
+
 
 export default Filter

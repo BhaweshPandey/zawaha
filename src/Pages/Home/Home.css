@@ -16,7 +16,7 @@
     justify-content: space-between;
     Font-family: Arial;
     Font-style: Bold;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
 .Home-header{
@@ -174,7 +174,7 @@
         justify-content: space-between;
         Font-family: Arial;
         Font-style: Bold;
-        font-size: 5px;
+        font-size: 18px;
     }
 
     .HomeTopBox{
@@ -239,7 +239,5 @@
         flex-wrap: nowrap;
     }
 
-    .Home-heading{
-        font-size: 25px;
-    }
+    
 }

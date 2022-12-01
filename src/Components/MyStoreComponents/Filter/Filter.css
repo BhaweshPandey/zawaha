@@ -43,3 +43,11 @@
     margin-right: 16px;
     cursor: pointer;
 }
+
+@media (max-width:600px) {
+
+    .Filter{
+        width: 260px;
+    }
+    
+}
