@@ -44,3 +44,84 @@
 .Rating-span-img{
     padding-top: 20px;
 }
+
+.Rating-mid{
+    background-color: #F7F8FB;
+    width: 450px;
+    padding: 15px;
+    border-radius: 16px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.r-m-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rmt-left{
+    display: flex;
+}
+
+.rmt-img{
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+.rmtn-name{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.rmtn-date{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 12px;
+    margin-top: 3px;
+}
+
+.rmm-text{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 18px;
+}
+
+.r-m-top-rating{
+    width: 60px;
+    display: flex;
+    padding: 0px 2px;
+    text-align: center;
+    height: 48px;
+    border-radius: 10px;
+    gap: 5px;
+    background-color: white;
+    
+}
+
+.rmtr-rating{
+    Font-family: Source Sans Pro;
+    Font-style: Semibold;
+    Font-size: 18px;
+    text-align: center;
+    
+}
+
+.rmtr-img{
+    text-align: center;
+    margin-top: 17px;
+}
+
+@media (max-width:600px) {
+
+    .Rating{
+        width: auto;
+    }
+
+    .Rating-mid{
+        width: 300px;
+    }
+    
+}

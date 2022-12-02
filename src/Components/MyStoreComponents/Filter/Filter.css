@@ -1,6 +1,6 @@
 .Filter{
     width: 420px;
-    height: 634px;
+    height: 620px;
     background-color: #FFFFFF ;
     position: absolute;
     padding: 10px;
@@ -44,10 +44,76 @@
     cursor: pointer;
 }
 
+.isActiveClass{
+    border: 2px solid black;
+    color: black;
+}
+
+.select-Event{
+    width: 400px;
+    height: 50px;
+    padding: 5px 15px;
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 20px;
+    color: #D8D8D9;
+    border: 1px solid #D8D8D9;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.spanSelect{
+   display: flex;
+}
+
+.Filter-label{
+    display: flex;
+    gap: 26px;
+}
+
+.Filter-input{
+    background-color: white;
+    border: 1px solid #D8D8D9;
+    color: #D8D8D9;
+    width: 180px;
+    height: 48px;
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 18px;
+    cursor: pointer;
+}
+
+.Filter-button{
+    width: 400px;
+    height: 48px;
+    margin-top: 15px;
+    border-radius: 27.5px;
+    background-color: #EAECF3;
+    cursor: pointer;
+}
+
 @media (max-width:600px) {
 
     .Filter{
-        width: 260px;
+        width: 280px;
+        height: 700px;
+    }
+
+    .select-Event{
+        width: 240px;
+    }
+
+    .Filter-button{
+        width: 240px;
+    }
+
+    .Filter-input{
+    width: 100px;
+    }
+
+    .Filter-select-btn{
+        margin-top: 10px;
     }
     
 }

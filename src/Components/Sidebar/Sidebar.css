@@ -9,23 +9,34 @@
     margin-left: 0px;
 }
 
+.sidebarActiveButtonClass{
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+}
+
 
 ul{
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
     display: flex;
     flex-direction: column;
 }
 
-/* li:hover{
-    background-color: rgb(160, 160, 124);
+li:hover{
+    background-color: red;
+    color: white;
     padding: 12px;
-} */
+}
 
 NavLink{
-    list-style: none;
+    /* list-style: none; */
     text-decoration: none;
     
+}
+
+li,a{
+    text-decoration: none;
 }
 
 
@@ -59,5 +70,7 @@ li {
     .Sidebar{
         display: none;
     }
+
+    
 }
 

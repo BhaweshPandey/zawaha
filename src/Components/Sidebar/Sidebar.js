@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom'
 import img from '../../Images/Rectangles.jpg'
@@ -10,31 +10,42 @@ import Promotion from '../../Images/Promotion.png'
 import Admin from '../Admin/Admin'
 
 const Sidebar = () => {
-  return (
-    <div className='Sidebar'>
-     <img className='sidebar-img' src={img} alt='' />
+    const [activeButton , setActiveButton]=useState("Home");
+    return (
+        <div className='Sidebar'>
+            <img className='sidebar-img' src={img} alt='' />
             <ul>
                 <li className='sidebar-home'>
-                    <NavLink to="/"><img src={Home}/>  Home</NavLink>
+                    <NavLink onClick={()=> setActiveButton("Home")}
+               className={`${activeButton == "Home" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
+                     to="/"><img src={Home} />  Home</NavLink>
                 </li>
                 <li className='sidebar-MyStore'>
-                    <NavLink to="/MyStore"><img src={MyStore}/>  MyStore</NavLink>
+                    <NavLink onClick={()=> setActiveButton("MyStore")}
+               className={`${activeButton == "MyStore" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
+                    to="/MyStore"><img src={MyStore} />  MyStore</NavLink>
                 </li>
                 <li className='sidebar-MyOrders'>
-                    <NavLink to="/MyOrders"><img src={MyOrder}/>  MyOrders</NavLink>
+                    <NavLink  onClick={()=> setActiveButton("MyOrder")}
+               className={`${activeButton == "MyOrder" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
+                     to="/MyOrders"><img src={MyOrder} />  MyOrders</NavLink>
                 </li>
                 <li className='sidebar-Promotion'>
-                    <NavLink to="/Promotion"><img src={Promotion}/>  Promotion</NavLink>
+                    <NavLink onClick={()=> setActiveButton("Promotion")}
+               className={`${activeButton == "Promotion" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
+                     to="/Promotion"><img src={Promotion} />  Promotion</NavLink>
                 </li>
                 <li className='sidebar-Proposal'>
-                    <NavLink to="/Proposal"><img src={Proposal}/>  Proposal</NavLink>
+                    <NavLink onClick={()=> setActiveButton("Proposal")}
+               className={`${activeButton == "Proposal" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
+                    to="/Proposal"><img src={Proposal} />  Proposal</NavLink>
                 </li>
             </ul>
-        <div className='Admin-box'>
-            <Admin />
+            <div className='Admin-box'>
+                <Admin />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Sidebar

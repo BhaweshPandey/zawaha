@@ -21,6 +21,13 @@
     color: #D8D8D9;
 }
 
+.CurrentlyActiveOrder-button-1:hover{
+    background-color:#304F42 ;
+    border-radius: 18.5px;
+    width: 100px;
+    text-align: center;
+}
+
 .CurrentlyActiveOrder-button-2:hover{
     background-color:#304F42 ;
     border-radius: 18.5px;
@@ -53,7 +60,7 @@
     Font-style: Bold;
     Font-size: 16px;
     border-radius: 18.5px;
-    width: 100px;
+    width: 120px;
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;

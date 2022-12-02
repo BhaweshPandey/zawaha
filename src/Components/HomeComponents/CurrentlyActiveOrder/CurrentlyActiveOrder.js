@@ -127,14 +127,14 @@ const CurrentlyActiveOrder = () => {
                     className={`${activeButton == "placedOrders" ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-1`}>Order placed</button>
                 <button
                     onClick={() => setActiveButton("confirmedOrders")}
-                    className=
-                    'CurrentlyActiveOrder-button-2'>Confirmed</button>
+                    className={`${activeButton == "confirmedOrders" ? "activeButtonClass" : ""}
+                    CurrentlyActiveOrder-button-2`}>Confirmed</button>
                 <button
                     onClick={() => setActiveButton("onProcessOrders")}
-                    className='CurrentlyActiveOrder-button-3'>On process</button>
+                    className={`${activeButton == "onProcessOrders" ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-3`}>On process</button>
                 <button
                     onClick={() => setActiveButton("completedOrders")}
-                    className='CurrentlyActiveOrder-button-4'>Completed</button>
+                    className={`${activeButton == "completedOrders" ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-4`}>Completed</button>
             </div>
 
             <div className='CurrentlyActiveOrder-box-map'>
