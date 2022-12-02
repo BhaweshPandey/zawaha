@@ -15,7 +15,7 @@ const MyOrders = () => {
         <h2>My order</h2>
         <img height='50px' src={bell} alt='' />
       </header> */}
-      <Header name={"MyOrders"}/>
+      <Header name={"MyOrders"} />
       <div className='heading'>
         <span className='h-left'>
           <h4 className='h-left-1'>Active Orders</h4>
@@ -23,13 +23,13 @@ const MyOrders = () => {
         </span>
         <span className='h-right'>
           <input className='h-right-input' type='Search' placeholder='Search' />
-          <button className='Filter-btn'>Filter <BsCaretDownFill/> </button>
-          <button className='Sort-btn'>Sort <BsCaretDownFill/> </button>
+          <button className='Filter-btn'>Filter <BsCaretDownFill /> </button>
+          <button className='Sort-btn'>Sort <BsCaretDownFill /> </button>
         </span>
       </div>
 
       <div className='item-box-map'>
-        {[1, 2,3,4,5,6,7,8].map((item, id) => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map((item, id) => (
           <div className='item-box'>
             <div className='item-box-top'>
               <div className='item-img'>
@@ -37,7 +37,7 @@ const MyOrders = () => {
               </div>
               <div className='item-img-right'>
                 <h2 className='item-img-right-top' >XTRX2918882910</h2>
-                <p  className='item-img-right-mid'>Sophie Asveld</p>
+                <p className='item-img-right-mid'>Sophie Asveld</p>
                 <button className='item-img-right-btn' >Confirmed</button>
               </div>
             </div>
