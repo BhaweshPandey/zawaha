@@ -1,6 +1,6 @@
 import React from 'react'
 import './Admin.css'
-import AdminPhoto from '../../Images/AdminPhoto.png.png' 
+import AdminPhoto from '../../Images/AdminPhoto.png' 
 import Arrow from '../../Images/arrow.png'
 
 const Admin = () => {

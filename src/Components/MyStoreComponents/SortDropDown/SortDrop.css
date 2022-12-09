@@ -1,5 +1,5 @@
 .dropdown-inearbtn{
-    background-color: #13322B;
+    background-color: #b5b7b9;
     /* background-color: #b9b4b4; */
     color: white;
     /* padding: 20px; */
@@ -14,6 +14,10 @@
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
+  }
+
+  .dropdown-inearbtn:hover{
+    background-color: #13322B;
   }
 
   .SortDrop{

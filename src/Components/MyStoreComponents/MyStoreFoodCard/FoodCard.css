@@ -1,12 +1,12 @@
 .FoodCard-map{
     display: flex;
     flex-wrap: wrap;
-    gap: 55px;
+    gap: 45px;
+    /* padding: 10px; */
 }
 
 .FoodCard{
     width: 300px;
-    
 }
 
 
@@ -44,7 +44,7 @@
 }
 
 .foodcard-point{
-padding-top: 7px;
+    cursor: pointer;
 }
 
 @media (max-width:900px) {

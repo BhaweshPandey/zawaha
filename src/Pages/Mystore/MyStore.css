@@ -1,9 +1,9 @@
 .MyStore{
-    width: 80%;
+    width: 78%;
     position: absolute;
     top: 0px;
     right: 0px;
-    padding: 15px;
+    padding: 10px ;
 }
 
 .Mystore-location{
@@ -27,6 +27,12 @@
     Font-family: Nunito Sans;
     Font-style: SemiBold;
     Font-size: 20px;
+    /* margin-top: 0px; */
+}
+
+.Mystore-location-pic{
+    margin-top: 10px;
+    text-align: center;
 }
 
 .Mystore-locatin-shop-rating{
@@ -34,7 +40,7 @@
 }
 
 .Mystore-locatin-shop-ratin-img{
-    padding-top: 24px;
+    padding-top: 20px;
     padding-right: 5px;
 }
 
@@ -43,7 +49,7 @@
 }
 
 .Mystore-locatin-shop-address-img{
-    padding-top: 24px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 5px;
 }
@@ -57,6 +63,10 @@
     cursor: pointer;
 }
 
+.information-btn:hover{
+    background-color: rgb(124, 127, 134);
+}
+
 .customer-btn{
     Font-family: Nunito Sans;
     Font-style: Bold;
@@ -64,6 +74,10 @@
     border: 1px solid #ECEDFB;
     background-color: white;
     cursor: pointer;
+}
+
+.customer-btn:hover{
+    background-color: rgb(124, 127, 134);
 }
 
 .Mystore-location-information{
@@ -84,9 +98,9 @@
     gap: 50px;
 }
 
-.pointer{
-    padding-top: 10px;
-}
+/* .pointer{
+    padding-top: 1px;
+} */
 
 .MyStore-selects-right{
     display: flex;
@@ -104,6 +118,10 @@ input{
     border: none;
 }
 
+input:hover{
+    background-color: #e1e1e7;
+}
+
 .Filter-btn{
     border: 2px solid #EAECF3;
     background-color: white;
@@ -117,6 +135,10 @@ input{
     cursor: pointer;
 }
 
+.Filter-btn:hover{
+    background-color: rgb(124, 127, 134);
+}
+
 .Sort-btn{
     border: 2px solid #EAECF3;
     background-color: white;
@@ -128,6 +150,10 @@ input{
     height: 40px;
     text-align: center;
     cursor: pointer;
+}
+
+.Sort-btn:hover{
+    background-color: rgb(124, 127, 134);
 }
   
   

@@ -1,26 +1,51 @@
 import React, { useState } from 'react'
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom'
-import img from '../../Images/Rectangles.jpg'
-import Home from '../../Images/HomeIcon.png'
-import MyStore from '../../Images/MyStore.png'
-import MyOrder from '../../Images/MyOrder.png'
-import Proposal from '../../Images/Proposal.png'
-import Promotion from '../../Images/Promotion.png'
 import Admin from '../Admin/Admin'
+import AllImages from '../../Assets/AllImages'
 
 const Sidebar = () => {
-    const [activeButton , setActiveButton]=useState("Home");
+    const [activeButton, setActiveButton] = useState("Home");
+
+    const Button = [
+        {
+            name: 'Home',
+            img: AllImages.HomeIcon
+        },
+        {
+            name: 'MyStore',
+            img: AllImages.MyStoreIcon
+        },
+        {
+            name: 'MyOrders',
+            img: AllImages.MyOrderIcon
+        },
+        {
+            name: 'Promotion',
+            img: AllImages.PromotionIcon
+        },
+        {
+            name: 'Proposal',
+            img: AllImages.ProposalIcon
+        }
+    ]
     return (
         <div className='Sidebar'>
-            <img className='sidebar-img' src={img} alt='' />
-            <ul>
-                <li className='sidebar-home'>
-                    <NavLink onClick={()=> setActiveButton("Home")}
-               className={`${activeButton == "Home" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
-                     to="/"><img src={Home} />  Home</NavLink>
-                </li>
-                <li className='sidebar-MyStore'>
+            <img className='sidebar-img' src={AllImages.SidebarTopPic} alt='' />
+            {Button.map((item) => (
+                <ul>
+                    <li className='sidebar-home'>
+                        <NavLink onClick={
+                            () => {
+                                setActiveButton(item.name)
+                            }}
+                            className={`${activeButton == item.name ? "sidebarActiveButtonClass" : "SidebarHome"} `}
+                            to={item.name}>
+                            <img src={item.img} />  
+                            {item.name}
+                            </NavLink>
+                    </li>
+                    {/* <li className='sidebar-MyStore'>
                     <NavLink onClick={()=> setActiveButton("MyStore")}
                className={`${activeButton == "MyStore" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
                     to="/MyStore"><img src={MyStore} />  MyStore</NavLink>
@@ -39,8 +64,9 @@ const Sidebar = () => {
                     <NavLink onClick={()=> setActiveButton("Proposal")}
                className={`${activeButton == "Proposal" ? "sidebarActiveButtonClass" : ""} SidebarHome`}
                     to="/Proposal"><img src={Proposal} />  Proposal</NavLink>
-                </li>
-            </ul>
+                </li> */}
+                </ul>
+            ))}
             <div className='Admin-box'>
                 <Admin />
             </div>

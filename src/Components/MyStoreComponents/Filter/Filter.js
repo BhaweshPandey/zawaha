@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import './Filter.css'
 import Arrowup from '../../../Images/Arrowup.png'
 
-const Filter = ({item,onclose}) => {
+const Filter = ({filter,onclose}) => {
   const [isActive , setIsActive] =useState('false');
   const [isActiveButton , setIsActiveButton] =useState('no');
 
-  if(!item){
+  if(!filter){
     return null;
   }
   return (

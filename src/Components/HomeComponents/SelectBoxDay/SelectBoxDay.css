@@ -11,6 +11,11 @@
     cursor: pointer;
 }
 
+.SelectBoxDay-s:hover{
+    background-color: rgb(153, 160, 160);
+    border-radius: 10px;
+}
+
 @media only screen and (max-width:900px) {
 
     .SelectBoxDay-s{

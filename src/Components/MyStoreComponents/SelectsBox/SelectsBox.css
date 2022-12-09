@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+.Category:hover{
+        background-color: rgb(124, 127, 134);
+    }
+
 .Filter{
     Font-family: Nunito Sans;
     Font-style: Bold;

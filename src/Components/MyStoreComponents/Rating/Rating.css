@@ -3,7 +3,7 @@
     right: 0px;
     top: 0px;
     width: 480px;
-    height: 900px;
+    height: 1000px;
     background-color: white;
     border: 1px solid #EAECF3;
     border-radius: 20px;
@@ -35,14 +35,45 @@
     margin-top: 0px;
 }
 
+.Rating-top-Right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
 .Rating-span{
     display: flex;
     gap: 10px;
     margin-top: 0px;
+    text-align: center;
 }
 
 .Rating-span-img{
-    padding-top: 20px;
+    padding-top: 18px;
+    margin-left: 5px;
+}
+
+.Rating-span-rate{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 16px;
+}
+
+.Progress{
+    margin-top: 7px;
+}
+
+.Rating-span-num{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 16px;
+    color: #9C9C9F;
 }
 
 .Rating-mid{
@@ -50,7 +81,16 @@
     width: 450px;
     padding: 15px;
     border-radius: 16px;
-    height: 250px;
+    height: 270px;
+    margin-top: 10px;
+}
+
+.Rating-mid2{
+    background-color: #F7F8FB;
+    width: 450px;
+    padding: 15px;
+    height: 180px;
+    border-radius: 16px;
     margin-top: 10px;
 }
 
@@ -87,18 +127,21 @@
     Font-family: Nunito Sans;
     Font-style: Regular;
     Font-size: 18px;
+    margin-top: 0px;
 }
 
 .r-m-top-rating{
     width: 60px;
-    display: flex;
-    padding: 0px 2px;
     text-align: center;
-    height: 48px;
-    border-radius: 10px;
+    display: flex;
+    padding-left: 10px;
+    /* padding-right: 0px; */
+    text-align: center;
+    height: 32px;
+    border-radius: 14px;
     gap: 5px;
+    margin-top: 15px;
     background-color: white;
-    
 }
 
 .rmtr-rating{
@@ -106,22 +149,50 @@
     Font-style: Semibold;
     Font-size: 18px;
     text-align: center;
+    margin-top: 5px;
     
 }
 
 .rmtr-img{
     text-align: center;
-    margin-top: 17px;
+    margin-top: 7px;
+    /* flex-wrap: wrap; */
+}
+
+.rmm-img{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.Progressbar{
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:600px) {
 
     .Rating{
-        width: auto;
+        width: 300px;
+        height: 1250px;
     }
 
     .Rating-mid{
-        width: 300px;
+        width: 230px;
+        height: 400px;
+    }
+
+    .Rating-mid2{
+        width: 230px;
+        height: 200px;
+    }
+
+    .rmm-text{
+        font-size: 12px;
+    }
+
+    .rmn-text{
+        font-size: 12px;
     }
     
 }

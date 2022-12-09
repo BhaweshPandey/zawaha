@@ -35,13 +35,13 @@ const Information = ({information, onclose}) => {
         </div>
         <div className='information-mid3'>
             <p className='information-p'>Store descriptions</p>
-            <h4 className='information-text'>Exercitation ullamco laboris nisi ut aliquip ex ea <br/>
+            <h3 className='information-text'>Exercitation ullamco laboris nisi ut aliquip ex ea <br/>
                 commodo consequat. Duis aute irure dolor in <br/>
-                reprehenderit in voluptate velit esse cillum<br/>
+                reprehenderit in voluptate velit esse cillum <br/>
                 dolore eu fugiat nulla pariatur. Excepteur sint <br/>
-                occaecat cupidatat non proident, sunt in culpa<br/>
-                qui officia deserunt mollit anim id est laborum.
-            </h4>
+                occaecat cupidatat non proident, sunt in culpa <br/>
+                qui officia deserunt mollit anim id est laborum. <br/>
+            </h3>
             <h4 className='information-text'>Duis aute irure dolor in reprehenderit in<br/> 
                 voluptate velit esse cillum dolore eu fugiat nulla <br/>
                 pariatur. Excepteur sint occaecat cupidatat non<br/>

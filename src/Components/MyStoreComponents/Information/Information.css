@@ -3,7 +3,7 @@
     right: 0px;
     top:0px;
     width: 480px;
-    height: 900px;
+    height: 970px;
     background-color: white;
     border: 1px solid #EAECF3;
     border-radius: 20px;
@@ -45,7 +45,11 @@
     Font-family: Nunito Sans;
     Font-style: SemiBold;
     Font-size: 18px;
+    /* text-align: start; */
+    /* width: 465px; */
+    /* height: 200px; */
 }
+
 
 @media (max-width:500px) {
     .Information{

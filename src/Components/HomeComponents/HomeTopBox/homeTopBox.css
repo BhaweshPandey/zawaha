@@ -42,24 +42,24 @@
 }
 
 .circle1{
-    height: 9px;
-    width: 9px;
+    height: 2px;
+    width: 2px;
     border-radius: 100%;
     margin-top: 0px;
     background-color: #CFAA72;
 }
 
 .circle2{
-    height: 9px;
-    width: 9px;
+    height: 2px;
+    width: 2px;
     border-radius: 100%;
     margin-top: 0px;
     background-color: #13322B;
 }
 
 .circle3{
-    height: 9px;
-    width: 9px;
+    height: 2px;
+    width: 2px;
     border-radius: 100%;
     margin-top: 0px;
     background-color: #FF6F60;

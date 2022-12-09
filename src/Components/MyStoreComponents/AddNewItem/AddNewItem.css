@@ -1,0 +1,98 @@
+.AddNewItem{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.AddNewItem-header{
+    display: flex;
+    text-align: center;
+    /* text-align: start; */
+}
+
+.AddNewItem-mid1{
+    border-top: 2px solid #EAECF3;
+    width: 600px;
+}
+
+.ANI-btn{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* text-align: start; */
+}
+
+.ANI-btn:hover{
+    color: red;
+}
+
+.ANI-backbtn{
+    text-align: center;
+    cursor: pointer;
+}
+
+.ANI-Select{
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #EAECF3;
+    border-radius: 10px;
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 18px;
+    cursor: pointer;
+
+}
+
+.ANI-input{
+    width: 600px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #EAECF3;
+    border-radius: 10px;
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 18px;
+    background: white;
+    text-align: start;
+    cursor: pointer;
+}
+
+.ANI-p{
+    Font-family: Nunito Sans;
+    Font-style: Regular;
+    Font-size: 15px;
+}
+
+.AddNewItem-mid2{
+    margin-top: 100px;
+}
+
+.ANI-h3{
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+}
+
+.ANI-btnNext{
+    color: #59595B;
+    border-radius: 27.5px;
+    width: 600px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.ANI-btnNext:hover{
+    background-color: black;
+    color: white;
+}

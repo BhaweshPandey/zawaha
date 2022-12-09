@@ -1,0 +1,21 @@
+.MoreOption{
+    width: 220px;
+    height: 130px;
+    position: absolute;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #c2bfbf;
+    /* text-align: center; */
+}
+
+.MoreOption,div{
+    Font-family: Nunito Sans;
+    Font-style: SemiBold;
+    Font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.MoreOption-btn:hover{
+    background-color: red;
+}

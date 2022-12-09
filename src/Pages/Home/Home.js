@@ -6,7 +6,7 @@ import CurrentlyActiveOrder from '../../Components/HomeComponents/CurrentlyActiv
 import TotalOrdersCard from '../../Components/HomeComponents/TotalOrdersCard/TotalOrdersCard'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
-import { Header } from '../../Components/MyStoreComponents/Header/Header'
+import Header from '../../Components/MyStoreComponents/Header/Header'
 import SelectBoxDay from '../../Components/HomeComponents/SelectBoxDay/SelectBoxDay'
 
 const Home = () => {

@@ -138,7 +138,7 @@ const CurrentlyActiveOrder = () => {
             </div>
 
             <div className='CurrentlyActiveOrder-box-map'>
-                {orders[activeButton].map((item, setIetem) => (
+                {orders[activeButton].map((item) => (
                     <div className='CurrentlyActiveOrder-box'>
                         <div className='CurrentlyActiveOrder-box-inear'>
                             <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>{item.name}</h3>

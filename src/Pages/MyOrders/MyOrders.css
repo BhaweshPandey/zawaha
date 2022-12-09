@@ -1,5 +1,5 @@
 .MyOrders{
-    width: 80%;
+    width: 78%;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -33,7 +33,7 @@ header{
 
 .h-right{
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     gap: 20px;
 }
 
@@ -44,20 +44,20 @@ header{
 .item-box-map{
     display: flex;
     flex-wrap: wrap;
-    gap: 17px;
+    gap: 10px;
     padding-top: 10px;
 }
 
 .item-box{
     border: 1px solid  #EAECF3;
-    width: 335px;
+    width: 325px;
     border-radius: 20px;
 }
 
 .item-box-top{
     border: 1px solid #EAECF3;
     display: flex;
-    padding: 10px;
+    padding: 12px;
     border-radius: 20px;
 }
 
@@ -123,6 +123,23 @@ button{
 
 .d-flex{
     display: flex;
+}
+
+.Filter-btn{
+    border: 2px solid #EAECF3;
+    background-color: white;
+    border-radius: 5px;
+    Font-family: Nunito Sans;
+    Font-style: Bold;
+    Font-size: 17px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Filter-btn:hover{
+    background-color: rgb(124, 127, 134);
 }
 
 @media only screen and (max-width:900px) {

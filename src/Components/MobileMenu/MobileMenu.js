@@ -2,7 +2,7 @@ import React from 'react'
 import './MobileMenu.css'
 import { Link } from 'react-router-dom';
 import Home from '../../Images/HomeIcon.png'
-import MyStore from '../../Images/MyStore.png'
+import MyStore from '../../Images/MyStore1.png'
 import MyOrder from '../../Images/MyOrder.png'
 import Proposal from '../../Images/Proposal.png'
 import Promotion from '../../Images/Promotion.png'

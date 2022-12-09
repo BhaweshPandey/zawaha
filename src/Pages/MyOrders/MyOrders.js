@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import './MyOrders.css'
 import foot from '../../Images/Bitmap.png';
 import bell from '../../Images/menutop copy.png';
+import Header from '../../Components/MyStoreComponents/Header/Header';
+import { BsCaretDownFill } from "react-icons/bs";
 import Sort from '../../Components/MyStoreComponents/SortDropDown/SortDrop';
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
-import { Header } from '../../Components/MyStoreComponents/Header/Header';
-import { BsCaretDownFill } from "react-icons/bs";
 
 const MyOrders = () => {
+  const [filter, setFilter] = useState(false);
+  const [sort ,setSort] = useState(false)
 
   return (
     <div className='MyOrders'>
@@ -21,11 +23,13 @@ const MyOrders = () => {
           <h4 className='h-left-1'>Active Orders</h4>
           <h4 className='h-left-2'>Previous Orders</h4>
         </span>
-        <span className='h-right'>
+        <div className='h-right'>
           <input className='h-right-input' type='Search' placeholder='Search' />
-          <button className='Filter-btn'>Filter <BsCaretDownFill /> </button>
-          <button className='Sort-btn'>Sort <BsCaretDownFill /> </button>
-        </span>
+          <button onClick={() => setFilter(true) } className='Filter-btn'>Filter <BsCaretDownFill /> </button>
+          <Filter filter={filter} onclose={() => setFilter(false)} />
+          <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill /> </button>
+          <Sort sort={sort} onClose={() => setSort(false)} />
+        </div>
       </div>
 
       <div className='item-box-map'>
