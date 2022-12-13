@@ -30,7 +30,7 @@ const Sidebar = () => {
         }
     ]
     return (
-        <div className='Sidebar'>
+        <div id='leftSidebar' className='Sidebar'>
             <img className='sidebar-img' src={AllImages.SidebarTopPic} alt='' />
             {Button.map((item) => (
                 <ul>

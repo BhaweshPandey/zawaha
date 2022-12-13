@@ -9,7 +9,82 @@ import Filter from '../../Components/MyStoreComponents/Filter/Filter';
 
 const MyOrders = () => {
   const [filter, setFilter] = useState(false);
-  const [sort ,setSort] = useState(false)
+  const [sort, setSort] = useState(false);
+  const [confirmed, setConfirmed] = useState(false)
+  const data = [
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 120.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 110.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 126.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 130.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 119.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'On progress',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 120.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 121.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+    {
+      code: 'XTRX2918882910',
+      name: 'Sophie Asveld',
+      Confirmed: 'Order placed',
+      Orderdate: 'nov 29th, 2022',
+      price: '$ 124.50',
+      EventDate: 'dec 25nd, 2022',
+      selectbtn: 'Proceed'
+    },
+  ]
 
   return (
     <div className='MyOrders'>
@@ -25,7 +100,7 @@ const MyOrders = () => {
         </span>
         <div className='h-right'>
           <input className='h-right-input' type='Search' placeholder='Search' />
-          <button onClick={() => setFilter(true) } className='Filter-btn'>Filter <BsCaretDownFill /> </button>
+          <button onClick={() => setFilter(true)} className='Filter-btn'>Filter <BsCaretDownFill /> </button>
           <Filter filter={filter} onclose={() => setFilter(false)} />
           <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill /> </button>
           <Sort sort={sort} onClose={() => setSort(false)} />
@@ -33,40 +108,42 @@ const MyOrders = () => {
       </div>
 
       <div className='item-box-map'>
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((item, id) => (
+        {data.map((item, id) => (
           <div className='item-box'>
             <div className='item-box-top'>
               <div className='item-img'>
                 <img height="100px" width="120px" src={foot} alt='' />
               </div>
               <div className='item-img-right'>
-                <h2 className='item-img-right-top' >XTRX2918882910</h2>
-                <p className='item-img-right-mid'>Sophie Asveld</p>
-                <button className='item-img-right-btn' >Confirmed</button>
+                <h2 className='item-img-right-top' >{item.code}</h2>
+                <p className='item-img-right-mid'>{item.name}</p>
+                <button onClick={() => setConfirmed(item.price)} className='item-img-right-btn' >
+                {confirmed == item.price ? 'Confirmed' : 'Order placed'}
+                 </button>
               </div>
             </div>
             <div className='item-box-bottom'>
               <div>
                 <div>
                   <p className='item-box-bottom-top'>Order date</p>
-                  <h3 className='item-box-bottom-bottom'>nov 29th, 2022</h3>
+                  <h3 className='item-box-bottom-bottom'>{item.Orderdate}</h3>
                 </div>
                 <div>
                   <p className='item-box-bottom-top'>Total price</p>
-                  <h3 className='item-box-bottom-bottom'>$ 120.50</h3>
+                  <h3 className='item-box-bottom-bottom'>{item.price}</h3>
                 </div>
                 <button className='item-box-bottom-btn1'>See Deteils</button>
               </div>
               <div>
                 <div>
                   <p className='item-box-bottom-top'>Event Date</p>
-                  <h3 className='item-box-bottom-bottom'>dec 25nd, 2022</h3>
+                  <h3 className='item-box-bottom-bottom'>{item.EventDate}</h3>
                 </div>
                 <div>
                   <p className='item-box-bottom-top'>Payment</p>
                   <h3 className='item-box-bottom-bottom'>Credit card</h3>
                 </div>
-                <button className='item-box-bottom-btn2'>Proceed</button>
+                <button className='item-box-bottom-btn2'>{item.selectbtn}</button>
               </div>
             </div>
           </div>

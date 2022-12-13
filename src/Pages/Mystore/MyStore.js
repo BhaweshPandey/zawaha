@@ -68,7 +68,9 @@ const MyStore = () => {
           <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill /> </button>
           <SortDrop sort={sort} onClose={() => setSort(false)} />
           {/* <image source={Images.bannerList2} /> */}
-          <img onClick={() => setAdditem(true)} className='Addbtn' height='35px' src={AllImages.Addbtn} />
+          <img onClick={() =>
+          setAdditem(true)
+          } className='Addbtn' height='35px' src={AllImages.Addbtn} />
           <AddNewItem additem={additem} onClose={() => setAdditem(false)} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Unpublish.css'
 
-const Unpublish = ({ unpublish, onClose }) => {
+const Unpublish = ({ unpublish, onClose,onclose }) => {
     if (!unpublish) {
         return null;
     }
@@ -14,8 +14,8 @@ const Unpublish = ({ unpublish, onClose }) => {
                         unpublish,so your customer wont see it?</p>
                 </div>
                 <div className='RI-btn'>
-                    <button onClick={onClose} className='btn-no'>No</button>
-                    <button onClick={onClose} className='btn-Yes'>Yes</button>
+                    <button onClick={onclose} className='btn-no'>No</button>
+                    <button onClick={onclose} className='btn-Yes'>Yes</button>
                 </div>
             </div>
         </div>

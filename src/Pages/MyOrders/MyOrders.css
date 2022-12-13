@@ -4,7 +4,7 @@
     top: 0px;
     right: 0px;
     padding: 10px;
-    
+    border-left: 2px solid #EAECF3;
 }
 
 header{
@@ -79,6 +79,7 @@ header{
     Font-family: Nunito Sans;
     Font-style: SemiBold;
     Font-size: 13px;
+    cursor: pointer;
 }
 
 

@@ -15,9 +15,9 @@ const MoreOption = ({ moreOption, onClose }) => {
       <div className='MoreOption-btn'>See item details</div>
       <div className='MoreOption-btn'>Edit item</div>
       <div onClick={() => setUnpublish(true)} className='MoreOption-btn'>Set item unpublish</div>
-      <Unpublish unpublish={unpublish} onClose={() => setUnpublish(false)} />
+      <Unpublish unpublish={unpublish} onclose={onClose} onClose={() => setUnpublish(false)} />
       <div onClick={() => setRemoveitem(true)} className='MoreOption-btn'>Remove items</div>
-      <RemoveItem removeitem={removeitem} onClose={() => setRemoveitem(false)} />
+      <RemoveItem removeitem={removeitem} onclose={onClose} onClose={() => setRemoveitem(false)} />
     </div>
   )
 }

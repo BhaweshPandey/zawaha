@@ -1,6 +1,6 @@
 .Sidebar{
-    width: 18%;
-    border-right: 2px solid #EAECF3;
+    width: 19%;
+    /* border-right: 2px solid #EAECF3; */
 }
 
 
@@ -47,13 +47,13 @@ li {
     Font-style: Bold;
     Font-size: 22px;
     text-indent: 10px;
-    padding: 7px;
+    padding: 5px;
 }
 
 .Admin-box{
     display: flex;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 430px;
 }
 
 @media (max-width:900px) {
