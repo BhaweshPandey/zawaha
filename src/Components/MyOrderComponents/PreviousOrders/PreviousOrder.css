@@ -1,0 +1,15 @@
+.item-boxs-bottom-btn1{
+    width: 290px;
+    height: 35px;
+    border: 2px solid #ECEDFB;
+    background-color: white;
+    margin-left: 16px;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.item-img-right-btn1{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

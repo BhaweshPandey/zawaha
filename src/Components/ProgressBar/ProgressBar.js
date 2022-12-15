@@ -2,9 +2,10 @@ import React from 'react'
 
 const ProgressBar = ({progress}) => {
 
+
     const Parentdiv = {
-        height: '1px',
-        width: '230px',
+        height: '0.5px',
+        width: '235px',
         backgroundColor: '#EAECF3',
         borderRadius: '40px',
     }
@@ -24,7 +25,7 @@ const ProgressBar = ({progress}) => {
     // }
 
     return (
-        <div>
+        <div >
             <div style={Parentdiv}>
                 <div style={Childdiv}>
                     <div >

@@ -10,23 +10,33 @@ const Sidebar = () => {
     const Button = [
         {
             name: 'Home',
-            img: AllImages.HomeIcon
+            img: AllImages.HomeIcon,
+            imgClick:AllImages.HomeClick,
+            path: './'
         },
         {
             name: 'MyStore',
-            img: AllImages.MyStoreIcon
+            img: AllImages.MyStoreIcon,
+            imgClick: AllImages.MyStoreClick,
+            path:'./MyStore'
         },
         {
             name: 'MyOrders',
-            img: AllImages.MyOrderIcon
-        },
-        {
-            name: 'Promotion',
-            img: AllImages.PromotionIcon
+            img: AllImages.MyOrderIcon,
+            imgClick:AllImages.MyOrderClick,
+            path:'./MyOrders'
         },
         {
             name: 'Proposal',
-            img: AllImages.ProposalIcon
+            img: AllImages.PromotionIcon,
+            imgClick: AllImages.PromotionClick,
+            path:'./Proposal'
+        },
+        {
+            name: 'Promotion',
+            img: AllImages.ProposalIcon,
+            imgClick: AllImages.ProposalClick,
+            path:'./Promotion'
         }
     ]
     return (
@@ -40,9 +50,9 @@ const Sidebar = () => {
                                 setActiveButton(item.name)
                             }}
                             className={`${activeButton == item.name ? "sidebarActiveButtonClass" : "SidebarHome"} `}
-                            to={item.name}>
-                            <img src={item.img} />  
-                            {item.name}
+                            to={item.path}>
+                             {activeButton == item.name ? <img src={item.imgClick} /> : <img src={item.img} /> }  
+                              {item.name}
                             </NavLink>
                     </li>
                     {/* <li className='sidebar-MyStore'>

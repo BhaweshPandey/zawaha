@@ -26,7 +26,13 @@ import StarIcon from '../Images/Star.jpg'
 import MenPic2 from '../Images/menpic2.png'
 import MenPic3 from '../Images/menpic3.png'
 import WomenPic from '../Images/womenpic.png'
-
+import HomeClick from '../Images/homeBlack.png'
+import MyStoreClick from '../Images/MyStoreBlack.png'
+import MyOrderClick from '../Images/myorderBlack.png'
+import PromotionClick from '../Images/promotionBlack.png'
+import ProposalClick from '../Images/proposalsBlack.png'
+import Camerapic from '../Images/Camerapic.png'
+ 
 const AllImages = {
     Addbtn,
     AdminPhoto,
@@ -55,7 +61,13 @@ const AllImages = {
     StarIcon,
     MenPic2,
     MenPic3,
-    WomenPic
+    WomenPic,
+    HomeClick,
+    MyStoreClick,
+    MyOrderClick,
+    PromotionClick,
+    ProposalClick,
+    Camerapic
 }
 
 export default AllImages;

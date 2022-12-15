@@ -21,7 +21,7 @@ function App() {
       <MobileMenu/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/Home' element={<Home/>} />
+          {/* <Route path='/Home' element={<Home/>} /> */}
           <Route path='/MyOrders' element={<MyOrders/>} />
           <Route path='/Mystore' element={<MyStore />} />
           <Route path='/Promotion' element={<Promotion />} />

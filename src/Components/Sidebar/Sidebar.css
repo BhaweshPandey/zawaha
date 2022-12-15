@@ -10,9 +10,10 @@
 }
 
 .sidebarActiveButtonClass{
-    background-color: red;
-    color: white;
+    /* background-color: red; */
+    color: black;
     padding: 5px 20px;
+    font-weight: bold;
 }
 
 
@@ -24,8 +25,8 @@ ul{
 }
 
 li:hover{
-    background-color: red;
-    color: white;
+    /* background-color: red; */
+    color: black;
     padding: 12px;
 }
 
@@ -37,6 +38,13 @@ NavLink{
 
 li,a{
     text-decoration: none;
+    color: #D8D8D9;
+}
+
+.imgClass{
+    color: black;
+    background-color: black;
+    opacity: 1;
 }
 
 

@@ -1,0 +1,48 @@
+.StorePromotion-map{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+}
+
+.StorePromotion{
+    width: 480px;
+    height: 290px;
+    border: 2px solid #ECEDFB;
+    border-radius: 20px;
+}
+
+.PCM4{
+    /* height: 10px; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+.PCMI{
+    width: 135px;
+    height: 76px;
+    margin-top: 32px;
+    /* margin-bottom: 0px; */
+    border-radius: 15px;
+
+}
+
+.PCMT{
+    height: 0px;
+    font-size: 19px;
+    margin-top: 40px;
+}
+
+
+.PCMTP{
+    height: 1px;
+    display: flex;
+    gap: 10px;
+}
+
+.PCMTP1{
+    color: #EAECF3;
+}
+
+.PCMTP2{
+    font-weight: bold;
+}

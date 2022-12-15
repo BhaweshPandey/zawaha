@@ -1,7 +1,15 @@
 .Promotion{
-    width: 80%;
+    width: 78%;
     position: absolute;
     top: 0px;
     right: 0px;
-    /* border-left: 2px solid #EAECF3; */
+    border-left: 2px solid #EAECF3;
+    height: 950px;
+    padding: 10px;
 }
+
+.advertisclass{
+     border-bottom: 4px solid orange;
+     
+}
+

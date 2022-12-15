@@ -21,6 +21,7 @@
     Font-family: Nunito Sans;
     Font-style: ExtraBold;
     Font-size: 30px;
+    height: 10px;
 }
 
 .Mystore-location-shop-details{
@@ -28,6 +29,7 @@
     Font-family: Nunito Sans;
     Font-style: SemiBold;
     Font-size: 20px;
+    /* height: 10px; */
     /* margin-top: 0px; */
 }
 
@@ -41,7 +43,7 @@
 }
 
 .Mystore-locatin-shop-ratin-img{
-    padding-top: 20px;
+    padding-top: 22px;
     padding-right: 5px;
 }
 
@@ -50,7 +52,7 @@
 }
 
 .Mystore-locatin-shop-address-img{
-    padding-top: 20px;
+    padding-top: 22px;
     padding-left: 10px;
     padding-right: 5px;
 }
