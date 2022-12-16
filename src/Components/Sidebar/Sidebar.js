@@ -9,42 +9,43 @@ const Sidebar = () => {
 
     const Button = [
         {
-            name: 'Home',
+            name: ' Home ',
             img: AllImages.HomeIcon,
             imgClick:AllImages.HomeClick,
-            path: './'
+            path: '/'
         },
         {
-            name: 'MyStore',
+            name: ' MyStore ',
             img: AllImages.MyStoreIcon,
             imgClick: AllImages.MyStoreClick,
-            path:'./MyStore'
+            path:'/MyStore'
         },
         {
-            name: 'MyOrders',
+            name: ' MyOrders ',
             img: AllImages.MyOrderIcon,
             imgClick:AllImages.MyOrderClick,
-            path:'./MyOrders'
+            path:'/MyOrders'
         },
         {
-            name: 'Proposal',
+            name: ' Proposal ',
             img: AllImages.PromotionIcon,
             imgClick: AllImages.PromotionClick,
-            path:'./Proposal'
+            path:'/Proposal'
         },
         {
-            name: 'Promotion',
+            name: ' Promotion ',
             img: AllImages.ProposalIcon,
             imgClick: AllImages.ProposalClick,
-            path:'./Promotion'
+            path:'/Promotion'
         }
     ]
     return (
         <div id='leftSidebar' className='Sidebar'>
             <img className='sidebar-img' src={AllImages.SidebarTopPic} alt='' />
+
             {Button.map((item) => (
                 <ul>
-                    <li className='sidebar-home'>
+                    <li className='sidebar-home'> 
                         <NavLink onClick={
                             () => {
                                 setActiveButton(item.name)

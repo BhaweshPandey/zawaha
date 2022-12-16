@@ -1,0 +1,107 @@
+{
+    "OrderPlaced" : [
+            {
+                "name": "Elise Beverley",
+                "wedding": "Wedding & anniversary",
+                "price": "$240.00 4 items",
+                "date": "Ordered on Jan 2nd, 2021"
+            },
+            {
+                "name": "Elise Beverley",
+                "wedding": "Wedding & anniversary",
+                "price": "$240.00 4 items",
+                "date": "Ordered on Jan 2nd, 2021"
+            },
+            {
+                "name": "Elise Beverley",
+                "wedding": "Wedding & anniversary",
+                "price": "$240.00 4 items",
+                "date": "Ordered on Jan 2nd, 2021"
+            },
+            {
+                "name": "Amit Beverley",
+                "wedding": "Wedding & anniversary",
+                "price": "$240.00 4 items",
+                "date": "Ordered on Jan 2nd, 2021"
+            } 
+    ],
+    "Confirmed" : [
+        {
+            "name": "Bhupesh Beverley",
+            "wedding": "Wedding & anniversary",
+            "price": "$300.00 5 items",
+            "date": "Ordered on Jan 2nd, 2021"
+        },
+        {
+            "name": "Deep Beverley",
+            "wedding": "Wedding & anniversary",
+            "price": "$180.00 3 items",
+            "date": "Ordered on Jan 2nd, 2021"
+        },
+        {
+            "name": "Tushar Beverley",
+            "wedding": "Wedding & anniversary",
+            "price": "$60.00 1 items",
+            "date": "Ordered on Jan 2nd, 2021"
+        },
+        {
+            "name": "Jitu Beverley",
+            "wedding": "Wedding & anniversary",
+            "price": "$120.00 2 items",
+            "date": "Ordered on Jan 2nd, 2021"
+        } 
+    ],
+    "OnProcess" : [
+    {
+        "name": "bhawesh Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "600.00 10 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "Yogesh Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$240.00 4 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "sachin Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$360.00 6 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "deepak Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$420.00 7 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    } 
+    ],
+    "Completed" : [
+    {
+
+        "name": "Elise Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$240.00 4 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "Elise Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$240.00 4 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "Elise Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$240.00 4 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    },
+    {
+        "name": "Elise Beverley",
+        "wedding": "Wedding & anniversary",
+        "price": "$240.00 4 items",
+        "date": "Ordered on Jan 2nd, 2021"
+    } 
+    ]
+}

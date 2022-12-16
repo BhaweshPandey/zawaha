@@ -22,7 +22,7 @@ const Proposal = () => {
           <Sort sort={sort} onClose={() => setSort(false)} />
         </div>
         <div>
-          <div className='proposal-btn'>My proposal <img src={AllImages.ArrowRight} /></div>
+          <div className='proposal-btn'> My proposal  <img src={AllImages.ArrowRight} /></div>
         </div>
       </div>
       <div className='proposal-mid'>

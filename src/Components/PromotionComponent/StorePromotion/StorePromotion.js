@@ -17,7 +17,7 @@ const StorePromotion = ({promotionbtn}) => {
             type:'Discount',
             price:'$32.00',
             button_css: {
-                backgroundColor: '#f3adb2' , color: 'white'
+                backgroundColor: '#f3adb2' , color: '#6A2C3E'
             }
         },
         {
@@ -59,7 +59,7 @@ const StorePromotion = ({promotionbtn}) => {
                     <h3 className='PCM-user'>{item.type}</h3>
                 </div>
                 <div className='PCM4'>
-                   <img className='PCMI' height='50px' src={AllImages.Camerapic} />
+                   <img className='PCMI' height='50px' src={AllImages.Camerapic} alt='' />
                     <div className='PCMTT'>
                         <h3 className='PCMT'>4 hour wedding video documentations</h3>
                         <div className='PCMTP'>
