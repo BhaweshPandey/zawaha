@@ -24,10 +24,10 @@ const MyOrders = () => {
       <Header name={"MyOrders"} />
       <div className='heading'>
         <span className='h-left'>
-          <h4 className={ ` ${activebtn == 'active' ? 'ActiveOrderclass' : ''} h-left-1 `}
+          <h4 className={ ` ${activebtn === 'active' ? 'ActiveOrderclass' : ''} h-left-1 `}
           onClick={() => setActivebtn('active')}
           >Active Orders</h4>
-          <h4 className= {`${activebtn == 'activeNo' ? 'ActiveOrderclass' : ''} h-left-2 `}
+          <h4 className= {`${activebtn === 'activeNo' ? 'ActiveOrderclass' : ''} h-left-2 `}
           onClick={() => setActivebtn('activeNo')}
           >Previous Orders</h4>
         </span>
@@ -40,7 +40,7 @@ const MyOrders = () => {
         </div>
       </div>
 
-      { activebtn == 'active' ? <ActiveOrder activebtn={activebtn} /> :
+      { activebtn === 'active' ? <ActiveOrder activebtn={activebtn} /> :
       <PreviousOrders activebtn={activebtn} /> }
     </div>
   )

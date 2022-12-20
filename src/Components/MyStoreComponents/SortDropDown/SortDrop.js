@@ -40,7 +40,7 @@ const SortDrop = ({ sort, onClose }) => {
             // console.log("this is item comaparison ", sortValue === item.name)
           }
         }>
-          {active && sortValue == item.name ? <img className='clickIcon' src={clickIcon} /> : ""}
+          {active && sortValue === item.name ? <img className='clickIcon' src={clickIcon} /> : ""}
           {item.name}
         </div>))
       }

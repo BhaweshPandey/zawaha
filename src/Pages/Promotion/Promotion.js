@@ -19,11 +19,11 @@ const Promotion = () => {
       <div className='heading'>
         <span className='h-left'>
           <h4 onClick={()=> setPromotionbtn('InAppAdvertising') }
-           className={` ${promotionbtn == 'InAppAdvertising' ? 'advertisclass' : ''} h-left-1 `}>
+           className={` ${promotionbtn === 'InAppAdvertising' ? 'advertisclass' : ''} h-left-1 `}>
            In app advertising
            </h4>
           <h4 onClick={ () => setPromotionbtn('StorePromotion') }
-           className={` ${promotionbtn == 'StorePromotion' ? 'advertisclass' : ''} h-left-2 `}>
+           className={` ${promotionbtn === 'StorePromotion' ? 'advertisclass' : ''} h-left-2 `}>
            Store promotion</h4>
         </span>
         <div className='h-right'>
@@ -32,10 +32,10 @@ const Promotion = () => {
           <Filter filter={filter} onclose={() => setFilter(false)} />
           <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill /> </button>
           <Sort sort={sort} onClose={() => setSort(false)} />
-          <img src={AllImages.Addbtn} />
+          <img height='37px' src={AllImages.Addbtn} />
         </div>
       </div>
-      { promotionbtn == 'InAppAdvertising' ? 
+      { promotionbtn === 'InAppAdvertising' ? 
       <InAppAdvertising promotionbtn={promotionbtn} /> :
       <StorePromotion promotionbtn={promotionbtn}  /> }
     </div>

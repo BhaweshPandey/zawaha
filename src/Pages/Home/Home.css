@@ -32,7 +32,28 @@
     height: 200px;
     border-radius: 100%;
     margin-top: 10px;
+    position: relative;
 
+}
+
+.s-circle1{
+    position: absolute;
+    width: 6px;
+    top: 0;
+    left: 37px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: blue;
+}
+
+.s-circle2{
+    position: absolute;
+    width: 6px;
+    top: 38px;
+    right: 0px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: rgb(12, 12, 14);
 }
 
 .circle-inear{
@@ -57,9 +78,6 @@
     margin-top: 0px;
     font-size: 16px;
     color: #59595B;
-}
-
-.circle-inear-p-s:hover{
     cursor: pointer;
 }
 

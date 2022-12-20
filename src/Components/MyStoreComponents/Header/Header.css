@@ -4,15 +4,10 @@
     justify-content: space-between;
 }
 
-.notification:hover{
-    cursor: pointer;
-    background-color: rgb(201, 195, 195);
-    border-radius: 100%;
-    padding: 1px;
-}
 
 .notification{
     padding-top: 10px;
+    cursor: pointer;
 }
 
 

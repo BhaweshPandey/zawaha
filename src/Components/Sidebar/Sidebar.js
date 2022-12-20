@@ -5,7 +5,7 @@ import Admin from '../Admin/Admin'
 import AllImages from '../../Assets/AllImages'
 
 const Sidebar = () => {
-    const [activeButton, setActiveButton] = useState("Home");
+    const [activeButton, setActiveButton] = useState("/");
 
     const Button = [
         {
@@ -46,13 +46,11 @@ const Sidebar = () => {
             {Button.map((item) => (
                 <ul>
                     <li className='sidebar-home'> 
-                        <NavLink onClick={
-                            () => {
-                                setActiveButton(item.name)
-                            }}
-                            className={`${activeButton == item.name ? "sidebarActiveButtonClass" : "SidebarHome"} `}
+                        <NavLink
+                         onClick={() => setActiveButton(item.path)}
+                            className={`${activeButton === item.path ? "sidebarActiveButtonClass" : "SidebarHome"} `}
                             to={item.path}>
-                             {activeButton == item.name ? <img src={item.imgClick} /> : <img src={item.img} /> }  
+                             {activeButton === item.path ? <img src={item.imgClick} /> : <img src={item.img} /> }  
                               {item.name}
                             </NavLink>
                     </li>

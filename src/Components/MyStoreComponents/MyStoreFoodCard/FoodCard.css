@@ -7,7 +7,20 @@
 
 .FoodCard{
     width: 300px;
+    /* position: relative;
+    z-index: 1; */
 }
+/* 
+.food-img-inear{
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+    top: 100px;
+    left: 15px;
+} */
 
 
 .foodcard-checkbox{

@@ -1,7 +1,5 @@
 import React from 'react'
 import './FoodCard.css'
-import Food from '../../../Images/Bitmap.png'
-import points from '../../../Images/Moreitem.png'
 import { useState } from 'react'
 import MoreOption from '../MoreOptions/MoreOption'
 import AllImages from '../../../Assets/AllImages'
@@ -52,11 +50,12 @@ const FoodCard = () => {
         <div className='FoodCard'>
           {/* <label><input className='foodcard-checkbox' type="checkbox" /></label> */}
           <img className='food-img' width='300px' height='150px' src={item.FoodImg} alt='' />
+          {/* <div className='food-img-inear'>4.2</div> */}
           <p className='FoodCard-p'>{item.name}</p>
           <div className='FoodCard-rs'>
             <h2 className='FoodCard-h'>{item.price}</h2>
             <img onClick={() => setMoreOption(item.price)} className='foodcard-point' height='30px' src={item.moreImg} alt='' />
-            {moreOption == item.price ? <MoreOption moreOption={moreOption} onClose={() => setMoreOption(false)} /> : ""}
+            {moreOption === item.price ? <MoreOption moreOption={moreOption} onClose={() => setMoreOption(false)} /> : ""}
           </div>
         </div>
       ))}

@@ -126,17 +126,17 @@ const CurrentlyActiveOrder = () => {
             <div className='CurrentlyActiveOrder-button'>
                 <button
                     onClick={() => setActiveData('OrderPlaced')}
-                    className={`${activeData == 'OrderPlaced' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-1`}>Order placed</button>
+                    className={`${activeData === 'OrderPlaced' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-1`}>Order placed</button>
                 <button
                     onClick={() => setActiveData('Confirmed')}
-                    className={`${activeData == 'Confirmed' ? "activeButtonClass" : ""}
+                    className={`${activeData === 'Confirmed' ? "activeButtonClass" : ""}
                     CurrentlyActiveOrder-button-2`}>Confirmed</button>
                 <button
                     onClick={() => setActiveData('OnProcess')}
-                    className={`${activeData == 'OnProcess' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-3`}>On process</button>
+                    className={`${activeData === 'OnProcess' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-3`}>On process</button>
                 <button
                     onClick={() => setActiveData('completedOrders')}
-                    className={`${activeData == 'completedOrders' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-4`}>Completed</button>
+                    className={`${activeData === 'completedOrders' ? "activeButtonClass" : ""} CurrentlyActiveOrder-button-4`}>Completed</button>
             </div>
 
             {activeData == "OrderPlaced" &&

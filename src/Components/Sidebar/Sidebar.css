@@ -1,18 +1,23 @@
 .Sidebar{
-    width: 19%;
+    width: 20%;
+    /* margin: 0; */
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
     /* border-right: 2px solid #EAECF3; */
 }
 
 
 .sidebar-img{
-    margin-top: 0px;
     margin-left: 0px;
+   /* padding-left: 0px; */
 }
 
 .sidebarActiveButtonClass{
     /* background-color: red; */
     color: black;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     font-weight: bold;
 }
 
@@ -22,13 +27,10 @@ ul{
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-li:hover{
-    /* background-color: red; */
-    color: black;
-    padding: 12px;
-}
 
 NavLink{
     /* list-style: none; */
@@ -61,7 +63,7 @@ li {
 .Admin-box{
     display: flex;
     justify-content: center;
-    margin-top: 430px;
+    margin-top: 110px;
 }
 
 @media (max-width:900px) {
@@ -73,12 +75,5 @@ li {
     
 }
 
-@media (max-width:600px) {
-    
-    .Sidebar{
-        display: none;
-    }
 
-    
-}
 

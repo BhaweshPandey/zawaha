@@ -19,6 +19,8 @@ const Home = () => {
             <div className='Home-header'>
                 <div className='Home-circle'>
                     <div className='circle-inear'>
+                    <div className='s-circle1'></div>
+                    <div className='s-circle2'></div>
                         <h2 className='circle-inear-h'>287</h2>
                         <p className='circle-inear-p'>Total orders</p>
                         {/* <p className='circle-inear-p-s'>this week <BsFillCaretDownFill/></p> */}

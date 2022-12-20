@@ -134,7 +134,7 @@ const ActiveOrder = ({activebtn}) => {
                   <h3 className='item-box-bottom-bottom'>Credit card</h3>
                 </div>
                 <button  onClick={() => setConfirmed(item.price)} className='item-box-bottom-btn2'>
-                {confirmed == item.price ? 'Confirmed' : item.selectbtn}
+                {confirmed === item.price ? 'Confirmed' : item.selectbtn}
                 </button>
               </div>
             </div>
