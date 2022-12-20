@@ -24,10 +24,10 @@ const Filter = ({filter,onclose}) => {
              <h3 className='Filter-h3'>Item type</h3>
              <div className='Filter-span'>
               <button onClick={()=> setIsActive('true')}
-               className={`${isActive == 'true' ? "isActiveClass" : ""} Filter-select-btn`}
+               className={`${isActive === 'true' ? "isActiveClass" : ""} Filter-select-btn`}
               >Service only</button>
               <button onClick={()=> setIsActive('false')}
-               className={`${isActive == 'false' ? "isActiveClass" : ""} Filter-select-btn`}>Product only</button>
+               className={`${isActive === 'false' ? "isActiveClass" : ""} Filter-select-btn`}>Product only</button>
              </div>
           </div>
           <div>
@@ -56,12 +56,12 @@ const Filter = ({filter,onclose}) => {
             <h2 className='Filter-h3'>Targeted item</h2>
             <span className='spanSelect'>
               <button onClick={()=> setIsActiveButton('yes')}
-               className={`${isActiveButton == 'yes' ? "isActiveClass" : ""} Filter-select-btn`}
+               className={`${isActiveButton === 'yes' ? "isActiveClass" : ""} Filter-select-btn`}
               >Below 3</button>
               <button onClick={()=> setIsActiveButton('no')}
-               className={`${isActiveButton == 'no' ? "isActiveClass" : ""} Filter-select-btn`}>Above 3</button>
+               className={`${isActiveButton === 'no' ? "isActiveClass" : ""} Filter-select-btn`}>Above 3</button>
                <button onClick={()=> setIsActiveButton('ok')}
-               className={`${isActiveButton == 'ok' ? "isActiveClass" : ""} Filter-select-btn`}>5 only</button>
+               className={`${isActiveButton === 'ok' ? "isActiveClass" : ""} Filter-select-btn`}>5 only</button>
              </span>
           </div>
           <div>
