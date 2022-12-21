@@ -2,56 +2,116 @@ import React from 'react'
 import './PreviousOrder.css'
 import AllImages from '../../../Assets/AllImages'
 
-const PreviousOrders = ({ activebtn }) => {
-
-    const ActiveOrder = [
-        {
-            code: 'XTRX2918882910',
-            name: 'Sophie Asveld',
-            Confirmed: 'Cancelled',
-            Orderdate: 'Jan 28th, 2021',
-            price: '$ 120.50',
-            EventDate: 'Feb 2nd, 2021',
-            button_css: {
-                backgroundColor: '#6A2C3E'
-            }
-        },
-        {
-            code: 'XTRX2918882910',
-            name: 'Sophie Asveld',
-            Confirmed: 'Completed',
-            Orderdate: 'Jan 28th, 2021',
-            price: '$ 110.50',
-            EventDate: 'Feb 2nd, 2021',
-        },
-        {
-            code: 'XTRX2918882910',
-            name: 'Sophie Asveld',
-            Confirmed: 'Completed',
-            Orderdate: 'Jan 28th, 2021',
-            price: '$ 126.50',
-            EventDate: 'Feb 2nd, 2021',
-        },
-        {
-            code: 'XTRX2918882910',
-            name: 'Sophie Asveld',
-            Confirmed: 'Completed',
-            Orderdate: 'Jan 28th, 2021',
-            price: '$ 130.50',
-            EventDate: 'Feb 2nd, 2021',
-        },
-        {
-            code: 'XTRX2918882910',
-            name: 'Sophie Asveld',
-            Confirmed: 'Cancelled',
-            Orderdate: 'Jan 28th, 2021',
-            price: '$ 119.50',
-            EventDate: 'Feb 2nd, 2021',
-            button_css: {
-                backgroundColor: '#6A2C3E'
-            }
+export const PreviousOrder = [
+    {
+        code: 'XTRX2918882910',
+        name: 'Sophie Asveld',
+        Confirmed: 'Cancelled',
+        Orderdate: 'Jan 28th, 2021',
+        price: '$ 120.50',
+        EventDate: 'Feb 2nd, 2021',
+        button_css: {
+            backgroundColor: '#6A2C3E'
         }
-    ]
+    },
+    {
+        code: 'BACH2918882910',
+        name: 'Yogesh Asveld',
+        Confirmed: 'Completed',
+        Orderdate: 'Jan 28th, 2021',
+        price: '$ 110.50',
+        EventDate: 'Feb 2nd, 2021',
+    },
+    {
+        code: 'ASDF2918882910',
+        name: 'Bhupesh Asveld',
+        Confirmed: 'Completed',
+        Orderdate: 'Jan 28th, 2021',
+        price: '$ 126.50',
+        EventDate: 'Feb 2nd, 2021',
+    },
+    {
+        code: 'ZXCVR2918882910',
+        name: 'Amit Asveld',
+        Confirmed: 'Completed',
+        Orderdate: 'Jan 28th, 2021',
+        price: '$ 130.50',
+        EventDate: 'Feb 2nd, 2021',
+    },
+    {
+        code: 'BHASD2918882910',
+        name: 'Jitu Asveld',
+        Confirmed: 'Cancelled',
+        Orderdate: 'Jan 28th, 2021',
+        price: '$ 119.50',
+        EventDate: 'Feb 2nd, 2021',
+        button_css: {
+            backgroundColor: '#6A2C3E'
+        }
+    }
+]
+
+const PreviousOrders = ({ activebtn ,input }) => {
+
+    const filteredData = PreviousOrder.filter((el) => {
+        //if no input the return the original
+        if (input === '') {
+            return el;
+        }
+        //return the item which contains the user input
+        else {
+            return el.name.toLowerCase(PreviousOrder).includes(input)
+        }
+    })
+
+    // const PreviousOrder = [
+    //     {
+    //         code: 'XTRX2918882910',
+    //         name: 'Sophie Asveld',
+    //         Confirmed: 'Cancelled',
+    //         Orderdate: 'Jan 28th, 2021',
+    //         price: '$ 120.50',
+    //         EventDate: 'Feb 2nd, 2021',
+    //         button_css: {
+    //             backgroundColor: '#6A2C3E'
+    //         }
+    //     },
+    //     {
+    //         code: 'BACH2918882910',
+    //         name: 'Sophie Asveld',
+    //         Confirmed: 'Completed',
+    //         Orderdate: 'Jan 28th, 2021',
+    //         price: '$ 110.50',
+    //         EventDate: 'Feb 2nd, 2021',
+    //     },
+    //     {
+    //         code: 'ASDF2918882910',
+    //         name: 'Sophie Asveld',
+    //         Confirmed: 'Completed',
+    //         Orderdate: 'Jan 28th, 2021',
+    //         price: '$ 126.50',
+    //         EventDate: 'Feb 2nd, 2021',
+    //     },
+    //     {
+    //         code: 'ZXCVR2918882910',
+    //         name: 'Sophie Asveld',
+    //         Confirmed: 'Completed',
+    //         Orderdate: 'Jan 28th, 2021',
+    //         price: '$ 130.50',
+    //         EventDate: 'Feb 2nd, 2021',
+    //     },
+    //     {
+    //         code: 'BHASD2918882910',
+    //         name: 'Sophie Asveld',
+    //         Confirmed: 'Cancelled',
+    //         Orderdate: 'Jan 28th, 2021',
+    //         price: '$ 119.50',
+    //         EventDate: 'Feb 2nd, 2021',
+    //         button_css: {
+    //             backgroundColor: '#6A2C3E'
+    //         }
+    //     }
+    // ]
 
     if (!activebtn) {
         return null;
@@ -59,7 +119,7 @@ const PreviousOrders = ({ activebtn }) => {
     return (
         <div className='ActiveOrder'>
             <div className='item-box-map'>
-                {ActiveOrder.map((item, id) => (
+                {filteredData.map((item, id) => (
                     <div className='item-box'>
                         <div className='item-box-top'>
                             <div className='item-img'>

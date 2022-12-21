@@ -242,4 +242,11 @@
     .CurrentlyActiveOrder{
         padding: 0px 5px;
     }
+
+    .CurrentlyActiveOrder-box-inear-c1-r1{
+        font-size: 14px;
+    }
+    .CurrentlyActiveOrder-box-inear-c2-r1{
+        font-size: 14px;
+    }
 }
