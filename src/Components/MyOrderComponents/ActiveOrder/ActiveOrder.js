@@ -101,9 +101,10 @@ const ActiveOrder = ({ activebtn, input }) => {
     }
     //return the item which contains the user input
     else {
-      return el.name.toLowerCase(ActiveOrderData).includes(input)
+      return el.name.toLowerCase().includes(input)
     }
   })
+
 
   // const ActiveOrderData = [
   //     {
@@ -244,3 +245,4 @@ const ActiveOrder = ({ activebtn, input }) => {
 }
 
 export default ActiveOrder
+

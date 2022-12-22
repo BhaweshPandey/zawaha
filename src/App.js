@@ -28,7 +28,7 @@ function App() {
           <Route path='/Proposal' element={<Proposal />} />
         </Routes>
       </BrowserRouter>
-      <Notification/>
+      {/* <Notification/> */}
     </div>
   );
 }

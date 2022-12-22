@@ -64,6 +64,7 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    width: 180px;
 }
 
 .information-btn:hover{
@@ -77,6 +78,7 @@
     border: 1px solid #ECEDFB;
     background-color: white;
     cursor: pointer;
+    width: 180px;
 }
 
 .customer-btn:hover{
