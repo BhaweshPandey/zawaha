@@ -18,7 +18,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'ABCD2918882910',
-    name: 'Sophie Asveld',
+    name: 'Bhupesh Asveld',
     Confirmed: 'Confirmed',
     Orderdate: 'nov 29th, 2022',
     price: '$ 110.50',
@@ -27,7 +27,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'BDRCX2918882910',
-    name: 'Sophie Asveld',
+    name: 'Tushar Asveld',
     Confirmed: 'On progress',
     Orderdate: 'nov 29th, 2022',
     price: '$ 126.50',
@@ -36,7 +36,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'CWER2918882910',
-    name: 'Sophie Asveld',
+    name: 'Yogesh Asveld',
     Confirmed: 'Order placed',
     Orderdate: 'nov 29th, 2022',
     price: '$ 130.50',
@@ -48,7 +48,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'DLKJH2918882910',
-    name: 'Sophie Asveld',
+    name: 'Bhawesh Asveld',
     Confirmed: 'Order placed',
     Orderdate: 'nov 29th, 2022',
     price: '$ 119.50',
@@ -60,7 +60,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'FQWER2918882910',
-    name: 'Sophie Asveld',
+    name: 'Amit Asveld',
     Confirmed: 'Confirmed',
     Orderdate: 'nov 29th, 2022',
     price: '$ 120.50',
@@ -69,7 +69,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'MTYUI2918882910',
-    name: 'Sophie Asveld',
+    name: 'Deepak Asveld',
     Confirmed: 'On progress',
     Orderdate: 'nov 29th, 2022',
     price: '$ 121.50',
@@ -78,7 +78,7 @@ export const ActiveOrderData = [
   },
   {
     code: 'NZXCVG2918882910',
-    name: 'Sophie Asveld',
+    name: 'Harsh Asveld',
     Confirmed: 'Order placed',
     Orderdate: 'nov 29th, 2022',
     price: '$ 124.50',
@@ -101,7 +101,7 @@ const ActiveOrder = ({ activebtn, input }) => {
     }
     //return the item which contains the user input
     else {
-      return el.code.toLowerCase(ActiveOrderData).includes(input)
+      return el.name.toLowerCase(ActiveOrderData).includes(input)
     }
   })
 
