@@ -3,6 +3,7 @@ import './CurrentlyActiveOrder.css'
 import { BsChevronRight } from "react-icons/bs";
 import Arrow from '../../../Images/arrow.png'
 import Data from '../../../Data/Home.json'
+import { NavLink } from 'react-router-dom';
 
 const CurrentlyActiveOrder = () => {
     // const [activeButton, setActiveButton] = useState("placedOrders")
@@ -121,7 +122,9 @@ const CurrentlyActiveOrder = () => {
         <div className='CurrentlyActiveOrder' >
             <div className='CurrentlyActiveOrder-heading'>
                 <h3>Currently active orders</h3>
-                <h3>See all orders <BsChevronRight /></h3>
+                <NavLink to='/MyOrders' className='NavLink'>
+                    <h3>See all orders   <BsChevronRight /></h3>
+                </NavLink>
             </div>
             <div className='CurrentlyActiveOrder-button'>
                 <button
@@ -141,19 +144,21 @@ const CurrentlyActiveOrder = () => {
 
             <div className='CurrentlyActiveOrder-box-map'>
                 {activeData.map((item) => (
-                    <div className='CurrentlyActiveOrder-box'>
-                        <div className='CurrentlyActiveOrder-box-inear'>
-                            <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>{item.name}</h3>
-                            <p className='CurrentlyActiveOrder-box-inear-c1-r2'>{item.wedding}</p>
-                        </div>
-                        <div className='CurrentlyActiveOrder-box-inear-text'>
+                    <NavLink key={item.id} to='/MyOrders' className='NavLink' >
+                        <div className='CurrentlyActiveOrder-box'>
                             <div className='CurrentlyActiveOrder-box-inear'>
-                                <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>{item.price}</h3>
-                                <p className='CurrentlyActiveOrder-box-inear-c2-r2'>{item.date}</p>
+                                <h3 className='CurrentlyActiveOrder-box-inear-c1-r1'>{item.name}</h3>
+                                <p className='CurrentlyActiveOrder-box-inear-c1-r2'>{item.wedding}</p>
                             </div>
-                            <img className='CurrentlyActiveOrder-box-inear-arrow' src={Arrow} />
+                            <div className='CurrentlyActiveOrder-box-inear-text'>
+                                <div className='CurrentlyActiveOrder-box-inear'>
+                                    <h3 className='CurrentlyActiveOrder-box-inear-c2-r1'>{item.price}</h3>
+                                    <p className='CurrentlyActiveOrder-box-inear-c2-r2'>{item.date}</p>
+                                </div>
+                                <img className='CurrentlyActiveOrder-box-inear-arrow' src={Arrow} />
+                            </div>
                         </div>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
         </div>

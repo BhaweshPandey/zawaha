@@ -1,56 +1,68 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 import './Sidebar.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink , useLocation} from 'react-router-dom'
 import Admin from '../Admin/Admin'
 import AllImages from '../../Assets/AllImages'
 
+
 const Sidebar = () => {
     const [activeButton, setActiveButton] = useState("/");
+    const Location = useLocation()
+     useEffect (()=> {
+        window.scrollTo(0, 0);
+     }
+     ,[Location])
 
     const Button = [
         {
             name: ' Home ',
             img: AllImages.HomeIcon,
             imgClick:AllImages.HomeClick,
-            path: '/'
+            path: '/',
+            id: 1
         },
         {
             name: ' MyStore ',
             img: AllImages.MyStoreIcon,
             imgClick: AllImages.MyStoreClick,
-            path:'/MyStore'
+            path:'/MyStore',
+            id: 2
         },
         {
             name: ' MyOrders ',
             img: AllImages.MyOrderIcon,
             imgClick:AllImages.MyOrderClick,
-            path:'/MyOrders'
+            path:'/MyOrders',
+            id: 3
         },
         {
             name: ' Proposal ',
             img: AllImages.PromotionIcon,
             imgClick: AllImages.PromotionClick,
-            path:'/Proposal'
+            path:'/Proposal',
+            id: 4
         },
         {
             name: ' Promotion ',
             img: AllImages.ProposalIcon,
             imgClick: AllImages.ProposalClick,
-            path:'/Promotion'
+            path:'/Promotion',
+            id:5
         }
     ]
+
     return (
         <div id='leftSidebar' className='Sidebar'>
             <img className='sidebar-img' src={AllImages.SidebarTopPic} alt='' />
 
             {Button.map((item) => (
-                <ul>
+                <ul key={item.id}>
                     <li className='sidebar-home'> 
                         <NavLink
                          onClick={() => setActiveButton(item.path)}
-                            className={`${activeButton === item.path ? "sidebarActiveButtonClass" : "SidebarHome"} `}
+                            className={`${Location.pathname === item.path ? "sidebarActiveButtonClass" : "SidebarHome"} `}
                             to={item.path}>
-                             {activeButton === item.path ? <img src={item.imgClick} /> : <img src={item.img} /> }  
+                             {Location.pathname === item.path ? <img src={item.imgClick} /> : <img src={item.img} /> }  
                               {item.name}
                             </NavLink>
                     </li>

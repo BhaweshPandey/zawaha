@@ -13,7 +13,7 @@ const Header = ({name}) => {
     <div className='Header'>
       <div className='Header-heading'>
         <MobileMenu openbar={openbar} onClose={() => setOpenbar(false)}/>
-        <button onClick={() => setOpenbar(true)} className='hamburger-menu'><BsList/></button>
+        <button onClick={() => setOpenbar(true)} className='hamburger-menu'><BsList /></button>
         <h2 className='Header-heading-h2'>{name}</h2>
       </div>
       <img onClick={()=> setShow(true)} className='notification' height='50px' src={AllImages.NotificationIcon} alt='' />

@@ -22,6 +22,12 @@ const MyStore = () => {
   const [rating, setRating] = useState(false);
   const [sort, setSort] = useState(false);
   const [additem, setAdditem] = useState(false);
+  const [input , setInput ] = useState("")
+
+  let Handlerinput = (e) =>{
+    var lowerCase = e.target.value.toLowerCase();
+    setInput (lowerCase);
+  }
 
   return (
     <div className='MyStore'>
@@ -60,7 +66,7 @@ const MyStore = () => {
           <img src={AllImages.MoreItemPic} className='pointer' height='35px' />
         </div>
         <div className='MyStore-selects-right'>
-          <input type="search" placeholder="Search" />
+          <input onChange={Handlerinput} type="search" placeholder="Search" />
           {/* <Filter style={"Filter"} /> */}
           <button className='Filter-btn' onClick={() => setFilter(true)}>Filter <BsCaretDownFill /> </button>
           <Filter filter={filter} onclose={() => setFilter(false)} />
@@ -75,7 +81,7 @@ const MyStore = () => {
         </div>
       </div>
       <div className='Food-card'>
-        <FoodCard />
+        <FoodCard input={input} />
       </div>
     </div>
   )

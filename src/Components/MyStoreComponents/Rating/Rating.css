@@ -55,7 +55,7 @@
 }
 
 .Rating-span-img{
-    padding-top: 18px;
+    padding-top: 9px;
     margin-left: 5px;
 }
 
@@ -63,6 +63,7 @@
     Font-family: Nunito Sans;
     Font-style: SemiBold;
     Font-size: 16px;
+    margin-top: 8px;
 }
 
 .Progress{
@@ -74,6 +75,7 @@
     Font-style: Regular;
     Font-size: 16px;
     color: #9C9C9F;
+    margin-top: 8px;
 }
 
 .Rating-mid{

@@ -94,16 +94,18 @@ export const ActiveOrderData = [
 const ActiveOrder = ({ activebtn, input }) => {
   const [confirmed, setConfirmed] = useState(false)
 
-  const filteredData = ActiveOrderData.filter((el) => {
-    //if no input the return the original
-    if (input === '') {
-      return el;
-    }
-    //return the item which contains the user input
-    else {
-      return el.name.toLowerCase().includes(input)
-    }
-  })
+  const filteredData =
+    ActiveOrderData.filter((el) => {
+      //if no input the return the original
+      if (input === '') {
+        return el
+          ;
+      }
+      //return the item which contains the user input
+      else {
+        return el.name.toLowerCase().includes(input)
+      }
+    })
 
 
   // const ActiveOrderData = [
