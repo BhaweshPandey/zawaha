@@ -10,15 +10,18 @@ const Header = ({name}) => {
   const [openbar , setOpenbar] = useState(false);
   const [show,setShow]=React.useState(false);
   return (
+    <>
+      <button onClick={() => setOpenbar(true)} className='hamburger-menu'><BsList /></button>
+      <MobileMenu openbar={openbar} onClose={() => setOpenbar(false)}/>
     <div className='Header'>
-      <div className='Header-heading'>
-        <MobileMenu openbar={openbar} onClose={() => setOpenbar(false)}/>
-        <button onClick={() => setOpenbar(true)} className='hamburger-menu'><BsList /></button>
-        <h2 className='Header-heading-h2'>{name}</h2>
-      </div>
+        {/* <MobileMenu openbar={openbar} onClose={() => setOpenbar(false)}/> */}
+        {/* <button onClick={() => setOpenbar(true)} className='hamburger-menu'><BsList /></button> */}
+        {/* <h2 className='Header-heading-h2'>{name}</h2> */}
+      <h2 className='Header-heading-h2'>{name}</h2>
       <img onClick={()=> setShow(true)} className='notification' height='50px' src={AllImages.NotificationIcon} alt='' />
       <Notification show={show} onClose={()=>setShow(false)} />
     </div>
+    </>
   )
 }
 

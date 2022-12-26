@@ -14,3 +14,11 @@
      
 }
 
+@media  (max-width:600px) {
+    .Promotion{
+        border:none;
+
+    }
+    
+}
+

@@ -5,12 +5,13 @@
     background-color: rgb(151, 151, 238);
     width: 320px;
     height: 230px;
-    margin-top: 60px;
+    position: relative;
+    margin-top: 0px;
 }
 
 .closeIcon{
     position: absolute;
-    top: 90px;
+    top: 10px;
     left: 270px;
 }
 

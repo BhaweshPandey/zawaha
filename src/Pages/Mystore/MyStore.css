@@ -212,6 +212,11 @@ input:hover{
 
 
 @media (max-width:600px) {
+
+    .MyStore{
+        border:none;
+
+    }
     
     .information-btn{
         width: 250px;

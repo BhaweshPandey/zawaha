@@ -162,6 +162,7 @@ button{
 
 @media (max-width:600px) {
     .MyOrders{
+        border:none;
         width: auto;
     }
 

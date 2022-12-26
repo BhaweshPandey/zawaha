@@ -18,3 +18,12 @@
     border-radius: 5px;
     background-color: rgb(246, 247, 248);
 }
+
+@media (max-width:600px) {
+    
+    .Proposal{
+        border:none;
+    }
+
+    
+}
