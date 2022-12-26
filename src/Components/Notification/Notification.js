@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Notification.css'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import NotificationArrow from '../../Images/NotificationArrow.png'
@@ -6,6 +6,14 @@ import CustomerArrow from '../../Images/arrow.png'
 import clock from '../../Images/clock.png'
 
 const Notification = ({ show, onClose }) => {
+    useEffect(() => {
+        if (show) {
+            document.body.style.overflowY = 'hidden';
+        }
+        else {
+            document.body.style.overflowY = 'auto';
+        }
+    }, [show])
     if (!show) {
         return null;
     }
@@ -41,23 +49,29 @@ const Notification = ({ show, onClose }) => {
     }
     ]
     return (
-        <div className='Notification'>
-            <h1 className='Notification-h1'>
-                <img src={NotificationArrow} className='NotificationArrow' onClick={onClose} />   Notification</h1>
+        <>
+            <div className='Notification-container' >
+                <div className='Notification-value'>
+                    <div className='Notification'>
+                        <h1 className='Notification-h1'>
+                            <img src={NotificationArrow} className='NotificationArrow' onClick={onClose} />   Notification</h1>
 
-            {data.map((item, setIetem) => (
-                <div className='Notification-inear'>
-                    <h3 className='Notification-h3'>{item.heading}</h3>
-                    <p className='Notification-p1'>
-                        {item.customer}
-                        <img className='CustomerArrow' src={CustomerArrow} />
-                    </p>
-                    <p className='Notification-p2'>
-                        <img src={clock} />
-                        {item.date}</p>
+                        {data.map((item, setIetem) => (
+                            <div className='Notification-inear'>
+                                <h3 className='Notification-h3'>{item.heading}</h3>
+                                <p className='Notification-p1'>
+                                    {item.customer}
+                                    <img className='CustomerArrow' src={CustomerArrow} />
+                                </p>
+                                <p className='Notification-p2'>
+                                    <img src={clock} />
+                                    {item.date}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            ))}
-        </div>
+            </div>
+        </>
     )
 }
 
