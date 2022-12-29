@@ -51,7 +51,7 @@ export const PreviousOrder = [
     }
 ]
 
-const PreviousOrders = ({ activebtn ,input }) => {
+const PreviousOrders = ({ activebtn, input, sortValue }) => {
 
     const filteredData = PreviousOrder.filter((el) => {
         //if no input the return the original
@@ -61,6 +61,20 @@ const PreviousOrders = ({ activebtn ,input }) => {
         //return the item which contains the user input
         else {
             return el.name.toLowerCase(PreviousOrder).includes(input)
+        }
+    })
+    PreviousOrder.sort((a, b) => {
+        if (sortValue === "Ascending") {
+            return a.name > b.name ? 1 : -1
+        }
+        else if (sortValue === "Descending") {
+            return a.name < b.name ? 1 : -1
+        }
+        else if (sortValue === "Lower price - higher price") {
+            return a.price > b.price ? 1 : -1;
+        }
+        else if (sortValue === "Higher price - lower price") {
+            return a.price < b.price ? 1 : -1;
         }
     })
 
@@ -120,7 +134,7 @@ const PreviousOrders = ({ activebtn ,input }) => {
         <div className='ActiveOrder'>
             <div className='item-box-map'>
                 {filteredData.map((item, id) => (
-                    <div className='item-box'>
+                    <div key={id} className='item-box'>
                         <div className='item-box-top'>
                             <div className='item-img'>
                                 <img height="100px" width="120px" src={AllImages.FoodPic} alt='' />

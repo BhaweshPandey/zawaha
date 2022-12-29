@@ -35,12 +35,19 @@
   }
 
   .Sort-text{
-    color: #59595B;
+    /* color: #59595B; */
+    color: grey;
     Font-family: Nunito Sans;
     Font-style: Regular;
     Font-size: 18px;
     cursor: pointer;
     padding: 10px;
+  }
+
+  .SortActive{
+
+    color: black;
+    font-weight: bold;
   }
 
   .Sort-heading-text{

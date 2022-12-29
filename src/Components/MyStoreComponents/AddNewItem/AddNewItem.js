@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './AddNewItem.css'
 import backbtn from '../../../Images/backbtn.png'
 
@@ -12,7 +12,7 @@ const AddNewItem = ({ additem, onClose }) => {
                 <h2> <img className='ANI-backbtn' height='20px' onClick={onClose} src={backbtn} /> Add new item</h2>
             </span>
             <span>
-                <button  className='ANI-btn'> Item’s details </button>
+                <button className='ANI-btn'> Item’s details </button>
                 <button className='ANI-btn'> Item’s variant </button>
                 <button className='ANI-btn'> stock details </button>
             </span>
@@ -41,7 +41,7 @@ const AddNewItem = ({ additem, onClose }) => {
                 </div>
                 <div>
                     <p className='ANI-p'>Minimum order</p>
-                    <input  className='ANI-input' type='text' placeholder='Write name' />
+                    <input className='ANI-input' type='text' placeholder='Write name' />
                 </div>
                 <div>
                     <p className='ANI-p'>Category</p>

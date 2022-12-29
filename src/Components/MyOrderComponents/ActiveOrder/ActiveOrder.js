@@ -91,7 +91,7 @@ export const ActiveOrderData = [
 ]
 
 
-const ActiveOrder = ({ activebtn, input }) => {
+const ActiveOrder = ({ activebtn, input, sortValue }) => {
   const [confirmed, setConfirmed] = useState(false)
 
   const filteredData =
@@ -106,7 +106,20 @@ const ActiveOrder = ({ activebtn, input }) => {
         return el.name.toLowerCase().includes(input)
       }
     })
-
+  ActiveOrderData.sort((a, b) => {
+    if (sortValue === "Ascending") {
+      return a.name > b.name ? 1 : -1
+    }
+    else if (sortValue === "Descending") {
+      return a.name < b.name ? 1 : -1
+    }
+    else if (sortValue === "Lower price - higher price") {
+      return a.price > b.price ? 1 : -1;
+    }
+    else if (sortValue === "Higher price - lower price") {
+      return a.price < b.price ? 1 : -1;
+    }
+  })
 
   // const ActiveOrderData = [
   //     {
@@ -201,7 +214,7 @@ const ActiveOrder = ({ activebtn, input }) => {
     <div className='ActiveOrder'>
       <div className='item-box-map'>
         {filteredData.map((item, id) => (
-          <div className='item-box'>
+          <div key={id} className='item-box'>
             <div className='item-box-top'>
               <div className='item-img'>
                 <img height="100px" width="120px" src={AllImages.FoodPic} alt='' />
