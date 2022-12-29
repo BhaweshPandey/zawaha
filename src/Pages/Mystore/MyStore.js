@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './MyStore.css'
 import SelectsBox from '../../Components/MyStoreComponents/SelectsBox/SelectsBox';
 import ItemNoBox from '../../Components/MyStoreComponents/ItemNoBox/ItemNoBox';
-import { BsReception0 } from "react-icons/bs";
 import Filter from '../../Components/MyStoreComponents/Filter/Filter';
-import Sort from '../../Components/MyStoreComponents/SortDropDown/SortDrop';
-import { BsSearch } from "react-icons/bs";
 import FoodCard from '../../Components/MyStoreComponents/MyStoreFoodCard/FoodCard';
 import Header from '../../Components/MyStoreComponents/Header/Header';
 import { BsCaretDownFill } from "react-icons/bs";
@@ -22,12 +19,14 @@ const MyStore = () => {
   const [rating, setRating] = useState(false);
   const [sort, setSort] = useState(false);
   const [additem, setAdditem] = useState(false);
-  const [input , setInput ] = useState("")
+  const [input, setInput] = useState("");
+  const [sortValue, setSortValue] = useState("");
 
-  let Handlerinput = (e) =>{
+  let Handlerinput = (e) => {
     var lowerCase = e.target.value.toLowerCase();
-    setInput (lowerCase);
+    setInput(lowerCase);
   }
+  // console.log('this is sort value ', sortValue)
 
   return (
     <div className='MyStore'>
@@ -72,16 +71,21 @@ const MyStore = () => {
           <Filter filter={filter} onclose={() => setFilter(false)} />
           {/* <Sort style={"Sort"}/> */}
           <button onClick={() => setSort(true)} className='Sort-btn'>Sort <BsCaretDownFill /> </button>
-          <SortDrop sort={sort} onClose={() => setSort(false)} />
+          <SortDrop
+            sortValue={sortValue}
+            setSortValue={setSortValue}
+            sort={sort}
+            onClose={() => setSort(false)}
+          />
           {/* <image source={Images.bannerList2} /> */}
           <img onClick={() =>
-          setAdditem(true)
+            setAdditem(true)
           } className='Addbtn' height='35px' src={AllImages.Addbtn} />
           <AddNewItem additem={additem} onClose={() => setAdditem(false)} />
         </div>
       </div>
       <div className='Food-card'>
-        <FoodCard input={input} />
+        <FoodCard sortValue={sortValue} input={input} />
       </div>
     </div>
   )

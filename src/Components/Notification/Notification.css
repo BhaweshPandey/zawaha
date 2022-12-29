@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: white; */
   /* opacity: 1; */
   /* transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
   width: 100%;
@@ -21,7 +22,7 @@
   box-shadow: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
   background-color: #fff;
   width: 505px;
-  border-radius: 20px 0 0 20px
+  border-radius: 20px 0 0 20px;
 }
 
 .Notification{
